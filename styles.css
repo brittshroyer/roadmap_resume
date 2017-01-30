@@ -1,13 +1,13 @@
 body {
-  height:20000px;
+  height:1000px;
 }
 
 .road-container{
  -webkit-perspective: 100px;
  -webkit-perspective-origin:50% 50%;
  border: 2px solid black;
- height: 1000px;
- width: 1000px;
+ height: 800px;
+ width: 800px;
  left:50%;
  margin-left:-200px;
  position:fixed;
@@ -52,3 +52,83 @@ body {
   border:2px solid tomato;
   -webkit-transform:translateZ(-2500px)
 }
+.road-box{
+  height: 1000px;
+  width: 1000px;
+  border: 2px solid black;
+  margin: 0 auto;
+  perspective: 1000px;
+}
+.road{
+  height: 1500px;
+  width: 800px;
+  margin: 0 auto;
+  background-color: grey;
+  transform: rotateX(92deg);
+  border-radius: 10% 10% 0 0;
+
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  perspective: 1000px;
+  /*overflow: hidden;*/
+  background: #252825;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.wrapper {
+  /*transform-style: preserve-3d;*/
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  transform: rotateX(75deg);
+}
+
+.states {
+  /*perspective: 313px;*/
+  padding: 50px 0px;
+  width: 100%;
+  height: 650px;
+  /*transform-style: preserve-3d;*/
+  overflow: scroll;
+  transform: translate(-50%, 0);
+  position: fixed;
+  top: 30%;
+  left: 50%;
+}
+.state {
+  position: relative;
+  margin: auto;
+  width: 600px;
+  height: 3000px;
+  /*transform: rotateX(10deg);*/
+  /*transform-origin: 0 0;*/
+  box-shadow: inset 0 0 0 5px rgba(200,200,200,.25);
+  background-color: grey;
+}
+.title {
+  color: #fff;
+  font-size: 800%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  white-space: nowrap;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+}
+.dash {
+  color: #fff;
+  font-size: 800%;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.dash1 {top: 10%;} .dash2{top: 20%} .dash3{top: 30%} .dash4{top:40%} .dash5{top:50%} .dash6{top:60%} .dash7{top:70%} .dash8{top:80%} .dash9{top:90%} .dash10{top: 99%}

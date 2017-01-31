@@ -80,7 +80,7 @@ body {
 }
 
 .wrapper {
-  /*transform-style: preserve-3d;*/
+  transform-style: preserve-3d;
   position: absolute;
   top: 0;
   left: 0;
@@ -90,10 +90,9 @@ body {
 }
 
 .states {
-  padding: 50px 0px;
-  width: 100%;
+  width: 600px;
   height: 2000px;
-  /*transform-style: preserve-3d;*/
+  transform-style: preserve-3d;
   overflow: scroll;
   transform: translate(-50%, 0);
   position: fixed;
@@ -105,26 +104,62 @@ body {
   margin: auto;
   width: 600px;
   height: 3000px;
-  /*transform: rotateX(10deg);*/
-  /*transform-origin: 0 0;*/
-  box-shadow: inset 0 0 0 5px rgba(200,200,200,.25);
   background-color: grey;
 }
+.signsWrapper{
+  transform-style: preserve-3d;
+  position: absolute;
+  bottom: 0;
+  left: 25%;
+  transform: rotateX(75deg);f
+}
+.signs{
+  width: 300px;
+  height: 2000px;
+  transform-style: preserve-3d;
+  overflow: scroll;
+  transform: translate(-50%, 0);
+  position: fixed;
+  top: -100%;
+  left: 50%;
+}
+.austinContainer{
+  -webkit-perspective: 100;
+}
+.austin{
+  	width: 150px;
+  	height: 100px;
+  	-webkit-transform: skew(20deg);
+  	   -moz-transform: skew(20deg);
+  	     -o-transform: skew(20deg);
+  	background-color: red;
+
+}
+.sign{
+  position: relative;
+  margin: auto;
+  width: 600px;
+  height: 3000px;
+  background-color: green;
+}
+.container{
+-webkit-perspective: 1000;
+}
 .cleveland{
-  -webkit-perspective: 1000px;
+  overflow: visible !important;
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
 }
 .clevelandSign{
-  height: 200px;
-  width: 200px;
+  height: 100px;
+  width: 100px;
   background-color: green;
   color: white;
   text-align: center;
-  transform: translate(-10% -10%);
-  margin-bottom: 100px;
-  /*transform-style: preserve-3d;*/
-  /*top: -20%;*/
-
+  transform: rotateX(-45deg);
+  margin: 0 auto;
 }
+
 .title {
   color: #fff;
   font-size: 800%;

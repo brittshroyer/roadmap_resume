@@ -10,7 +10,9 @@ $(document).ready(function() {
     // console.log('distance remaining', distanceRemaining);
     var distanceTraveled = initialDistance - distanceRemaining;
     console.log('distance traveled:',distanceTraveled);
-    $('ohioWelcome').css('animation', 'translateOhio 2s');
+    // $('.ohioWelcome').css('animation', 'translateOhio 2s');
+    $('.ohioWelcome').css('transform', 'translateZ('+distanceTraveled/6+'px)');
+    $('.post').css('height', distanceTraveled/16+'px');
   }
 
   $('.states').scroll(function(){

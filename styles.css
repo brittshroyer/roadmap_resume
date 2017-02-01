@@ -1,11 +1,58 @@
-.ohioWelcome{
-  height: 150px;
-  width: 250px;
-  background-color: green;
-  position: relative;
-  top: 24%;
-  left: 14%;
+.post{
+  height: 100px;
+  width: 5px;
+  background-color: silver;
+  top: 377px;
+  position: absolute;
+  margin: 0 auto;
+  border: 1px solid grey;
 }
+.lpost{
+  margin-left: 7%
+}
+.rpost{
+  margin-left: 91.5%;
+}
+.ground{
+  height: 500px;
+  width: 100%;
+  position: absolute;
+  top: 39%;
+  background-color: #006400;
+}
+.ohioWelcome{
+  position: relative;
+  width: 200px;
+  margin: 0 auto;
+}
+.ohioSign{
+  height: 100px;
+  width: 200px;
+  background-color: #003366;
+  position: relative;
+  top: 270px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content:space-around;
+  border: 4px solid white;
+  border-radius: 3px;
+  left: -1%;
+}
+.ohioSign h3{
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  letter-spacing: 2px;
+  font-size: 20px;
+  text-shadow: 2px 2px brown;
+}
+.ohioSign p{
+  color: white;
+  font-size: 18px;
+  font-family: 'Dancing Script', cursive;
+
+}
+
 
 body {
   height:1000px;
@@ -80,7 +127,7 @@ body {
 
 body {
   perspective: 600px;
-  background: #252825;
+  background: #7ec0ee;
   position: fixed;
   top: 0;
   left: 0;

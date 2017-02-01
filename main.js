@@ -1,26 +1,46 @@
 $(document).ready(function() {
-  // Handler for .ready() called.
-  //scrolling along z-axis (first thing we need is a variable that tells us how far we've scrolled
-  //calling scrollDistance() will give us the distance scrolled each time the user scrolls
-  var scrollPosition = document.body.scrollTop;
+//scroll to start of drive
+  $('.states').scrollTop($('.states')[0].scrollHeight);
+  console.log($('.states')[0].scrollHeight);
 
-  function scrollDistance() {
-    var newScrollPosition = document.body.scrollTop;
-    var delta = newScrollPosition - scrollPosition;
-    return delta;
-    console.log(delta);
+  var initialDistance = $('.states').scrollTop();
+
+  var calcMileage = function(){
+    var distanceRemaining = $('.states').scrollTop();
+    // console.log('distance remaining', distanceRemaining);
+    var distanceTraveled = initialDistance - distanceRemaining;
+    console.log('distance traveled:',distanceTraveled);
+    $('ohioWelcome').css('animation', 'translateOhio 2s');
   }
 
-  var boxPositions = [0, -500, -1000, -1500, -2000, -2500];
-  function moveCamera() {
-    var boxes = document.getElementsByClassName("box");
-    var delta = scrollDistance();
-    console.log(boxes);
-    for (var i=0,l=boxes.length;i<l;i++) {
-      boxPositions[i] += delta;
-      boxes[i].style["-webkit-transform"] = "translateZ("+boxPositions[i]+"px)";
-    }
-  }
-  window.addEventListener("scroll", moveCamera, false);
-  console.log('yo');
+  $('.states').scroll(function(){
+    calcMileage();
+  });
+
+  // var calcMileage = $('.states').scroll(function(){
+  //   var distanceRemaining = $('.states').scrollTop();
+  //   console.log('distance remaining', distanceRemaining);
+  //   var distanceTraveled = initialDistance - distanceRemaining;
+  //   console.log('distance traveled:',distanceTraveled);
+  //   return distanceTraveled;
+  // });
+
+  // $('.states').scroll(function(){
+  //   console.log(calcMileage);
+  // });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 });

@@ -19,10 +19,13 @@ $(document).ready(function() {
     }
     if(distanceTraveled>2000){
       $('.bellTower').css('margin-top', 30 - distanceTraveled/220 +'%');
+      var colgateDistance = distanceTraveled - 2000;
+      $('.colgate').css('transform', 'translateZ('+colgateDistance/12+'px)');
     }
-    if(distanceTraveled>2500){
-      $('.colgate').css('transform', 'translateZ('+i90Distance/6+'px)');
-    }
+    // if(distanceTraveled>2200){
+    //   var colgateDistance = distanceTraveled - 1000;
+    //   $('.colgate').css('transform', 'translateZ('+colgateDistance/10+'px)');
+    // }
 
 
   }

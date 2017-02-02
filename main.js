@@ -15,7 +15,13 @@ $(document).ready(function() {
     if(distanceTraveled>1500){
       var i90Distance = distanceTraveled - 1500;
       $('.i90').css('transform', 'translateZ('+i90Distance/6+'px)');
-      $('.i90post').css('height', i90distance+'px');
+      // $('.i90post').css('height', i90distance+'px');
+    }
+    if(distanceTraveled>2000){
+      $('.bellTower').css('margin-top', 30 - distanceTraveled/220 +'%');
+    }
+    if(distanceTraveled>2500){
+      $('.colgate').css('transform', 'translateZ('+i90Distance/6+'px)');
     }
 
 

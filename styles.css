@@ -89,7 +89,7 @@ body {
   position: relative;
   width: 200px;
   margin: 0 auto;
-  
+
 }
 .ohioSign{
   height: 100px;
@@ -184,7 +184,7 @@ body {
   margin: auto;
   width: 600px;
   height: 3000px;
-  background-color: grey;
+  background-image: url('./images/concrete_wall.png');
 }
 .signsWrapper{
   transform-style: preserve-3d;

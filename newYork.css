@@ -21,7 +21,7 @@
   border-top: 2px solid black;
 
 }
-/.NYSign{
+.NYSign{
   height: 100px;
   width: 200px;
   background-color: tomato;
@@ -41,7 +41,15 @@
   position: relative;
   z-index: 0;
   bottom: 53%;
-  left: -2%;
   margin: 0 auto;
-
+}
+.crosswalk{
+  height: 200px;
+  width: 100%;
+  background-color: #841f27;
+}
+.anchor{
+  height: 200px;
+  width: 10px;
+  background-color: black;
 }

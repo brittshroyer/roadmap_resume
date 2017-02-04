@@ -22,9 +22,12 @@ $(document).ready(function() {
       var colgateDistance = distanceTraveled - 2000;
       $('.colgate').css('transform', 'translateZ('+colgateDistance/12+'px)');
     }
+    // if(distanceTraveled>3200){
+    //   $('.anchor').css('transform', 'translateY(-'+(distanceTraveled-3000)/6+'px');
+    // }
     if(distanceTraveled>3250){
       var stoplightDistance = distanceTraveled - 3300;
-      $('.anchor').css('transform', 'translateZ('+ (stoplightDistance/4)+'px)');
+      $('.anchor').css('transform', 'translateZ('+ (stoplightDistance/6)+'px)');
       // $('.anchor').css('top', 36+'%)');
 
     }

@@ -2,3 +2,11 @@
   from { transform: translateZ(0px); }
   to   { transform: translateZ(300px); }
 }
+@keyframes colorchange{
+  0%{background-color: #006400;}
+  20%{background-color: #35D95F;}
+  40%{background-color: #4AEB76;}
+  60%{background-color: #75FF9D;}
+  80%{background-color: #91F6B0;}
+  100%{background-color: #fff;}
+}

@@ -16,6 +16,7 @@ $(document).ready(function() {
       var i90Distance = distanceTraveled - 1500;
       $('.i90').css('transform', 'translateZ('+i90Distance/6+'px)');
       $('.cloudBody').css('margin-left', -1100 + i90Distance/3 + 'px');
+      $('.cloud2').css('margin-left', 1000 - i90Distance/3 + 'px');
       // $('.i90post').css('height', i90distance+'px');
     }
     if(distanceTraveled>2000){
@@ -23,6 +24,20 @@ $(document).ready(function() {
       var colgateDistance = distanceTraveled - 2000;
       $('.colgate').css('transform', 'translateZ('+colgateDistance/12+'px)');
     }
+    if(distanceTraveled < 4000 || distanceTraveled > 7000){
+      $('#snow').addClass('hidden');
+    }else{
+      $('#snow').removeClass('hidden');
+    }
+    if(distanceTraveled > 5000){
+      $('.ground').css('background-color', 'white');
+      $('.ground').addClass('.snowBlanket');
+    }
+    // if(distanceTraveled > 2500){
+    //   $('#snow').fadeOut();
+    // }
+
+
     // if(distanceTraveled>3200){
     //   $('.anchor').css('transform', 'translateY(-'+(distanceTraveled-3000)/6+'px');
     // }
@@ -31,9 +46,9 @@ $(document).ready(function() {
       $('.anchor').css('transform', 'translateZ('+ (stoplightDistance/6)+'px)');
       // $('.anchor').css('top', 36+'%)');
     }
-    if(distanceTraveled>4000){
-      $('.cloudBody').fadeOut();
-    }
+    // if(distanceTraveled>4000){
+    //   $('.cloudBody').fadeOut();
+    // }
     // if(distanceTraveled>2200){
     //   var colgateDistance = distanceTraveled - 1000;
     //   $('.colgate').css('transform', 'translateZ('+colgateDistance/10+'px)');

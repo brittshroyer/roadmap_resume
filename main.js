@@ -15,6 +15,7 @@ $(document).ready(function() {
     if(distanceTraveled>1500){
       var i90Distance = distanceTraveled - 1500;
       $('.i90').css('transform', 'translateZ('+i90Distance/6+'px)');
+      $('.cloudBody').css('margin-left', -1100 + i90Distance/3 + 'px');
       // $('.i90post').css('height', i90distance+'px');
     }
     if(distanceTraveled>2000){
@@ -29,7 +30,9 @@ $(document).ready(function() {
       var stoplightDistance = distanceTraveled - 3300;
       $('.anchor').css('transform', 'translateZ('+ (stoplightDistance/6)+'px)');
       // $('.anchor').css('top', 36+'%)');
-
+    }
+    if(distanceTraveled>4000){
+      $('.cloudBody').fadeOut();
     }
     // if(distanceTraveled>2200){
     //   var colgateDistance = distanceTraveled - 1000;

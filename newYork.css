@@ -55,7 +55,7 @@
 .anchor{
   height: 191px;
   width: 125px;
-  background-color: rgba(0,0,0,0);
+  background-color: green;
   position: absolute;
   z-index: 0;
   top: 40.5%;

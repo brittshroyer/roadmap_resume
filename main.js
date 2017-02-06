@@ -31,7 +31,7 @@ $(document).ready(function() {
       $('.anchor').css('transform', 'translateZ('+ (stoplightDistance/6)+'px)');
       // $('.anchor').css('top', 36+'%)');
     }
-    if(distanceTraveled > 5500 ){
+    if(distanceTraveled > 5500 && distanceTraveled < 7700 ){
       var diploma = distanceTraveled - 5500;
       $('.ground').css('background', '#fff');
       $('.degree').css('transform', 'translateY('+ diploma/5 + 'px)');
@@ -53,10 +53,22 @@ $(document).ready(function() {
     if(distanceTraveled > 10000){
       var i40distance = distanceTraveled - 10000;
       $('.i40').css('transform', 'translateZ('+i40distance/6+'px)');
-      $('.hill').fadeOut(4000);
+      $('.hill').fadeOut(2000);
       $('.ground').css('background','#b1a688');
     }else{
       $('.hill').fadeIn('slow');
+    }
+    if(distanceTraveled > 12000){
+      var sunDistance = distanceTraveled - 12000;
+      $('.sun').css('transform', 'translateX('+ sunDistance/4 + 'px) translateY('+ sunDistance/10 + 'px)');
+    }
+    if(distanceTraveled > 13000){
+      $('.sky').css('opacity', .65);
+      $('.sun').css('background','red');
+    }
+    if(distanceTraveled > 15000){
+      $('.sky').css('opacity', .9);
+      $('.desertSky').css('background', 'black');
     }
 
     // if(distanceTraveled>4000){

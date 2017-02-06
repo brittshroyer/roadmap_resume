@@ -1,9 +1,9 @@
 .i90{
-  position: relative;
+  position: absolute;
   width: 40px;
   height: 50px;
   background-color: rgba(255,255,255,0);
-  top: 28%;
+  top: 39%;
   left: 43%;
   display: flex;
   justify-content: center;

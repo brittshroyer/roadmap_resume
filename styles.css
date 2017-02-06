@@ -187,7 +187,7 @@ left: 51%;
   100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
 }
 .i40{
-  
+
 }
 .post{
   height: 100px;
@@ -206,11 +206,13 @@ left: 51%;
 }
 .ground{
   height: 500px;
-  width: 100%;
+  width: 110%;
   position: absolute;
   animation: colorchange;
   top: 39%;
-  background-color: #15C223;
+  background: #526F35;
+  left: -1%;
+  -webkit-transition: background 2.5s linear;
 }
 .ohioWelcome{
   position: relative;

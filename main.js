@@ -26,25 +26,17 @@ $(document).ready(function() {
       var colgateDistance = distanceTraveled - 2000;
       $('.colgate').css('transform', 'translateZ('+colgateDistance/12+'px)');
     }
-    if(distanceTraveled < 3500 ){
-      $('.ground').css('background-color', '#15C223');
-    }
-    if(distanceTraveled > 38500 ){
-      $('.ground').css('background-color', '#35D95F');
-    }
-    if(distanceTraveled > 4800 ){
-      $('.ground').css('background-color', '#4AEB76');
+    if(distanceTraveled>3250){
+      var stoplightDistance = distanceTraveled - 3300;
+      $('.anchor').css('transform', 'translateZ('+ (stoplightDistance/6)+'px)');
+      // $('.anchor').css('top', 36+'%)');
     }
     if(distanceTraveled > 5500 ){
       var diploma = distanceTraveled - 5500;
-      $('.ground').css('background-color', '#75FF9D');
+      $('.ground').css('background', '#fff');
       $('.degree').css('transform', 'translateY('+ diploma/5 + 'px)');
-    }
-    if(distanceTraveled > 6500 ){
-      $('.ground').css('background-color', '#C8FFD8');
-    }
-    if(distanceTraveled > 7000 ){
-      $('.ground').css('background-color', '#fff');
+    }else{
+      $('.ground').css('background', '#526F35');
     }
     if(distanceTraveled > 9000 ){
       var towerDistance = distanceTraveled - 9000;
@@ -61,20 +53,12 @@ $(document).ready(function() {
     if(distanceTraveled > 10000){
       var i40distance = distanceTraveled - 10000;
       $('.i40').css('transform', 'translateZ('+i40distance/6+'px)');
+      $('.hill').fadeOut(4000);
+      $('.ground').css('background','#b1a688');
+    }else{
+      $('.hill').fadeIn('slow');
     }
-    // if(distanceTraveled > 2500){
-    //   $('#snow').fadeOut();
-    // }
 
-
-    // if(distanceTraveled>3200){
-    //   $('.anchor').css('transform', 'translateY(-'+(distanceTraveled-3000)/6+'px');
-    // }
-    if(distanceTraveled>3250){
-      var stoplightDistance = distanceTraveled - 3300;
-      $('.anchor').css('transform', 'translateZ('+ (stoplightDistance/6)+'px)');
-      // $('.anchor').css('top', 36+'%)');
-    }
     // if(distanceTraveled>4000){
     //   $('.cloudBody').fadeOut();
     // }

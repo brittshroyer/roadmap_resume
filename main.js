@@ -20,7 +20,7 @@ $(document).ready(function() {
       // $('.i90post').css('height', i90distance+'px');
     }
     if(distanceTraveled > 1900 && distanceTraveled < 7900){
-      $('.bellTower').css('margin-top', 30 - distanceTraveled/220 +'%');  
+      $('.bellTower').css('margin-top', 30 - distanceTraveled/220 +'%');
     }
     if(distanceTraveled>2000){
       var colgateDistance = distanceTraveled - 2000;
@@ -47,7 +47,9 @@ $(document).ready(function() {
       $('.ground').css('background-color', '#fff');
     }
     if(distanceTraveled > 8500 ){
+      var towerDistance = distanceTraveled - 8500;
       $('.degree').fadeOut('slow');
+      $('.bellTower').css('margin-top', -5.9 + towerDistance/75 +'%');
     }else{
       $('.degree').fadeIn('fast');
     }

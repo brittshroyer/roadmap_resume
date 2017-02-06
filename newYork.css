@@ -6,16 +6,22 @@
 }
 .bellTower{
   width: 0;
-	height: 0;
-	border-left: 50px solid transparent;
-	border-right: 50px solid transparent;
-	border-bottom: 50px solid gold;
+  height: 0;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  border-bottom: 90px solid #888888;
   margin: 0 auto;
-  margin-top: 20%;
+  margin-top: 150px;
+}
+.bellTower p{
+  display: block;
+  padding-top: 50px;
+  margin-left: -23px;
+  font-size: 21px;
 }
 .NYWelcome{
-  width: 100px;
-  height: 400px;
+  width: 200px;
+  height: 200px;
   background-color: #841f27;
   margin: 0 auto;
   border-top: 2px solid black;

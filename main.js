@@ -24,14 +24,28 @@ $(document).ready(function() {
       var colgateDistance = distanceTraveled - 2000;
       $('.colgate').css('transform', 'translateZ('+colgateDistance/12+'px)');
     }
-    if(distanceTraveled < 4000 || distanceTraveled > 7000){
+    if(distanceTraveled < 3500 ){
+      $('.ground').css('background-color', '#15C223');
+    }
+    if(distanceTraveled > 38500 ){
+      $('.ground').css('background-color', '#35D95F');
+    }
+    if(distanceTraveled > 4800 ){
+      $('.ground').css('background-color', '#4AEB76');
+    }
+    if(distanceTraveled > 5500 ){
+      $('.ground').css('background-color', '#75FF9D');
+    }
+    if(distanceTraveled > 6500 ){
+      $('.ground').css('background-color', '#C8FFD8');
+    }
+    if(distanceTraveled > 7500 ){
+      $('.ground').css('background-color', '#fff');
+    }
+    if(distanceTraveled < 3500 || distanceTraveled > 7000){
       $('#snow').addClass('hidden');
     }else{
       $('#snow').removeClass('hidden');
-    }
-    if(distanceTraveled > 5000){
-      $('.ground').css('background-color', 'white');
-      $('.ground').addClass('.snowBlanket');
     }
     // if(distanceTraveled > 2500){
     //   $('#snow').fadeOut();

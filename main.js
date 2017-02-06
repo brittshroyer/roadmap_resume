@@ -16,7 +16,7 @@ $(document).ready(function() {
       var i90Distance = distanceTraveled - 1500;
       $('.i90').css('transform', 'translateZ('+i90Distance/6+'px)');
       $('.cloudBody').css('margin-left', -1100 + i90Distance/3 + 'px');
-      $('.cloud2').css('margin-left', 1000 - i90Distance/3 + 'px');
+      $('.cloud2').css('margin-left', 1000 - i90Distance/5 + 'px');
       // $('.i90post').css('height', i90distance+'px');
     }
     if(distanceTraveled > 1900 && distanceTraveled < 7900){
@@ -46,10 +46,10 @@ $(document).ready(function() {
     if(distanceTraveled > 7000 ){
       $('.ground').css('background-color', '#fff');
     }
-    if(distanceTraveled > 8500 ){
-      var towerDistance = distanceTraveled - 8500;
+    if(distanceTraveled > 9000 ){
+      var towerDistance = distanceTraveled - 9000;
       $('.degree').fadeOut('slow');
-      $('.bellTower').css('margin-top', -5.9 + towerDistance/75 +'%');
+      $('.bellTower').css('margin-top', -5.9 + towerDistance/55 +'%');
     }else{
       $('.degree').fadeIn('fast');
     }
@@ -57,6 +57,10 @@ $(document).ready(function() {
       $('#snow').addClass('hidden');
     }else{
       $('#snow').removeClass('hidden');
+    }
+    if(distanceTraveled > 10000){
+      var i40distance = distanceTraveled - 10000;
+      $('.i40').css('transform', 'translateZ('+i40distance/6+'px)');
     }
     // if(distanceTraveled > 2500){
     //   $('#snow').fadeOut();

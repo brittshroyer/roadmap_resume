@@ -78,8 +78,201 @@ display: flex;
 justify-content: center;
 align-items: center;
 border: 2px solid white;
-text-shadow: 1px solid black; 
+text-shadow: 1px solid black;
 }
 .gate p{
   font-size: 12px;
+}
+
+/*diploma*/
+
+.degree{
+  width: 325px;
+  height: 250px;
+  background-color: #fdf5e8;
+  position: absolute;
+  right: 2%;
+  top: -275px;
+  font-family: 'Playball', cursive;
+  box-shadow: 3px 3px 1px #888888;
+}
+.degree h4{
+  width: 250px;
+  margin: -14px auto;
+  font-size: 20px;
+}
+.c1{
+  transform: rotate(-79deg);
+  position: absolute;
+  display: block;
+  margin-top: 57px;
+  margin-left: 62px;
+}
+.o2{
+  transform: rotate(-58deg);
+  position: absolute;
+  display: block;
+  margin-top: 51px;
+  margin-left: 68px;
+}
+.l3{
+  transform: rotate(-68deg);
+  position: absolute;
+  display: block;
+  margin-top: 46px;
+  margin-left: 73px;
+}
+.g4{
+  transform: rotate(-57deg);
+  position: absolute;
+  display: block;
+  margin-top: 40px;
+  margin-left: 77px;
+}
+.a5{
+  transform: rotate(-50deg);
+  position: absolute;
+  display: block;
+  margin-top: 34px;
+  margin-left: 83px;
+}
+.t6{
+  transform: rotate(-40deg);
+  position: absolute;
+  display: block;
+  margin-top: 29px;
+  margin-left: 91px;
+}
+.e7{
+  transform: rotate(-18deg);
+  position: absolute;
+  display: block;
+  margin-top: 25px;
+  margin-left: 97px;
+}
+.u8{
+  transform: rotate(-15deg);
+  position: absolute;
+  display: block;
+  margin-top: 22px;
+  margin-left: 111px;
+}
+.n9{
+  transform: rotate(6deg);
+  position: absolute;
+  display: block;
+  margin-top: 21px;
+  margin-left: 126px;
+}
+.i10{
+  transform: rotate(13deg);
+  position: absolute;
+  display: block;
+  margin-top: 22px;
+  margin-left: 135px;
+}
+.v11{
+  transform: rotate(24deg);
+  position: absolute;
+  display: block;
+  margin-top: 24px;
+  margin-left: 142px;
+}
+.e12{
+  transform: rotate(22deg);
+  position: absolute;
+  display: block;
+  margin-top: 28px;
+  margin-left: 150px;
+}
+.r13{
+  transform: rotate(34deg);
+  position: absolute;
+  display: block;
+  margin-top: 32px;
+  margin-left: 157px;
+}
+.s14{
+  transform: rotate(40deg);
+  position: absolute;
+  display: block;
+  margin-top: 37px;
+  margin-left: 164px;
+}
+.i15{
+  transform: rotate(46deg);
+  position: absolute;
+  display: block;
+  margin-top: 42px;
+  margin-left: 171px;
+}
+.t16{
+  transform: rotate(55deg);
+  position: absolute;
+  display: block;
+  margin-top: 48px;
+  margin-left: 175px;
+}
+.y17{
+  transform: rotate(55deg);
+  position: absolute;
+  display: block;
+  margin-top: 54px;
+  margin-left: 179px;
+}
+.degree h3{
+  display: block;
+  width: 105px;
+  margin-top: 80px;
+  margin-left: 115px;
+  font-size: 16px;
+}
+.degree p{
+  text-align: center;
+  font-size: 11.5px;
+  margin: 5px 20px 22px 20px;
+}
+.degree h5{
+  display: block;
+  margin-top: -10px;
+  margin-left: 105px;
+}
+#triangle-topleft {
+  width: 0;
+  height: 0;
+  border-top: 50px solid #8B0000;
+  border-right: 50px solid transparent;
+  display: block;
+  position: absolute;
+  top: 0%;
+}
+#triangle-topright{
+  width: 0;
+	height: 0;
+	border-top: 50px solid #8B0000;
+	border-left: 50px solid transparent;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+#triangle-bottomleft{
+  width: 0;
+	height: 0;
+	border-bottom: 50px solid #8B0000;
+	border-right: 50px solid transparent;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+#triangle-bottomright{
+  width: 0;
+	height: 0;
+	border-bottom: 50px solid #8B0000;
+	border-left: 50px solid transparent;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }

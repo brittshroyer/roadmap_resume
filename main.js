@@ -19,8 +19,10 @@ $(document).ready(function() {
       $('.cloud2').css('margin-left', 1000 - i90Distance/3 + 'px');
       // $('.i90post').css('height', i90distance+'px');
     }
+    if(distanceTraveled > 1900 && distanceTraveled < 7900){
+      $('.bellTower').css('margin-top', 30 - distanceTraveled/220 +'%');  
+    }
     if(distanceTraveled>2000){
-      $('.bellTower').css('margin-top', 30 - distanceTraveled/220 +'%');
       var colgateDistance = distanceTraveled - 2000;
       $('.colgate').css('transform', 'translateZ('+colgateDistance/12+'px)');
     }
@@ -34,15 +36,22 @@ $(document).ready(function() {
       $('.ground').css('background-color', '#4AEB76');
     }
     if(distanceTraveled > 5500 ){
+      var diploma = distanceTraveled - 5500;
       $('.ground').css('background-color', '#75FF9D');
+      $('.degree').css('transform', 'translateY('+ diploma/5 + 'px)');
     }
     if(distanceTraveled > 6500 ){
       $('.ground').css('background-color', '#C8FFD8');
     }
-    if(distanceTraveled > 7500 ){
+    if(distanceTraveled > 7000 ){
       $('.ground').css('background-color', '#fff');
     }
-    if(distanceTraveled < 3500 || distanceTraveled > 7000){
+    if(distanceTraveled > 8500 ){
+      $('.degree').fadeOut('slow');
+    }else{
+      $('.degree').fadeIn('fast');
+    }
+    if(distanceTraveled < 5000 || distanceTraveled > 9000){
       $('#snow').addClass('hidden');
     }else{
       $('#snow').removeClass('hidden');

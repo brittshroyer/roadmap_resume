@@ -10,3 +10,7 @@
   80%{background-color: #91F6B0;}
   100%{background-color: #fff;}
 }
+@keyframes star{
+  from {transform: translateX(0px) translateY(0px);}
+  to{ transform: translateX(-1500px) translateY(300px);}
+}

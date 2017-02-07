@@ -159,3 +159,25 @@
   top: 37%;
   left: 10%;
 }
+.headlight{
+  width: 50px;
+  height: 900px;
+  border-radius: 50% 50% 20% 15%;
+  /*position: absolute;*/
+  background-color: beige;
+  overflow: visible;
+}
+.animateStar{
+  animation: star 1s;
+}
+.shootingStar{
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: white !important;
+  position: absolute;
+  z-index: 1;
+  top: 10%;
+  right: -1%;
+
+}

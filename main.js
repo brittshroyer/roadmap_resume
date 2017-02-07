@@ -17,7 +17,6 @@ $(document).ready(function() {
       $('.i90').css('transform', 'translateZ('+i90Distance/6+'px)');
       $('.cloudBody').css('margin-left', -1100 + i90Distance/3 + 'px');
       $('.cloud2').css('margin-left', 1000 - i90Distance/5 + 'px');
-      // $('.i90post').css('height', i90distance+'px');
     }
     if(distanceTraveled > 1900 && distanceTraveled < 7900){
       $('.bellTower').css('margin-top', 30 - distanceTraveled/220 +'%');
@@ -83,12 +82,6 @@ $(document).ready(function() {
     }else{
       $('.ql').fadeOut('fast');
     }
-    // }else{
-    //   $('.ql').fadeOut('fast');
-    // }
-    // if(distanceTraveled > 13250){
-    //   $('.ql').css('z-index', 0);
-    // }
     if(distanceTraveled > 13400){
       var qlDistance = distanceTraveled - 13400;
       $('.ql').css('transform', 'translateX(-'+ qlDistance/6 + 'px)translateZ('+ qlDistance/4 + 'px)');
@@ -100,11 +93,13 @@ $(document).ready(function() {
       $('.nightCover').css('opacity', 0);
       $('body').css('filter', 'grayscale('+0+'%)');
     }
-    // if(distanceTraveled > 14475){
-    //   $('.nightOverlay').css('opacity',.95);
-    // }
-
-
+    if(distanceTraveled > 14450){
+      $('.shootingStar').addClass('animateStar');
+      setTimeout(function(){
+        $('.shootingStar').removeClass('animateStar');
+        console.log('timeout working!');
+      }, 1500);
+    }
   }
 
   $('.states').scroll(function(){

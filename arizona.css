@@ -100,21 +100,25 @@
 }
 .ql{
   position: absolute;
-  top: 200px;
+  top: 393px;
   display: none;
+  /*left: 300px;*/
 }
+
 .qlSign {
-  width: 200px;
+  transform: rotateY(-2deg) rotateZ(-1deg);
+  width: 230px;
   height: 150px;
   background: grey;
   color: black;
   position: absolute;
-  left: 204px;
+  left: 404px;
   text-align: center;
   line-height: 7px;
   font-family: 'Graduate', cursive;
   font-size: 14px;
   box-shadow: 1px 1px 1px black;
+  /*border-bottom: 200px solid transparent;*/
 }
 .qlSign h3{
   font-size: 26px;
@@ -128,16 +132,30 @@
 }
 .qlPost{
   width: 10px;
-  height: 70px;
+  height: 290px;
   background-color: black;
   position: absolute;
-  top: 150px;
+  top: 149px;
+  left: 300px;
   border-radius: 0 0 30% 15%;
+
 }
 .qlLPost{
-  left: 240px;
+  left: 440px;
+  top: 152px;
+
 }
 .qlRPost{
-  left: 360px;
+  left: 590px;
   border-bottom: 8px solid #b1a688;
+}
+.rock{
+  height: 79px;
+  width: 49px;
+  background-color: grey;
+  border-radius: 31% 50% 31% 12%;
+  position: absolute;
+  z-index: 0;
+  top: 37%;
+  left: 10%;
 }

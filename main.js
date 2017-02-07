@@ -67,7 +67,7 @@ $(document).ready(function() {
     if(distanceTraveled > 12000){
       var sunDistance = distanceTraveled - 12000;
       $('.sun').css('transform', 'translateX('+ sunDistance/4 + 'px) translateY('+ sunDistance/7 + 'px)');
-      $('.cactusPart').css('transform', 'translateX('+ sunDistance/12 + 'px)');
+      $('.cactusPart').css('transform', 'translateX('+ sunDistance/16 + 'px)');
     }
     if(distanceTraveled > 12500){
       $('.sky').css('opacity', .65);
@@ -76,15 +76,33 @@ $(document).ready(function() {
       $('.sky').css('opacity', 0);
       $('.sun').css('background','#ff9944');
     }
-    if(distanceTraveled > 13300){
+    if(distanceTraveled > 12800){
+      var qDistance = distanceTraveled - 12800;
       $('.ql').fadeIn('slow');
+      $('.ql').css('top', 393 - qDistance/8 + 'px');
     }else{
       $('.ql').fadeOut('fast');
     }
+    // }else{
+    //   $('.ql').fadeOut('fast');
+    // }
+    // if(distanceTraveled > 13250){
+    //   $('.ql').css('z-index', 0);
+    // }
     if(distanceTraveled > 13400){
       var qlDistance = distanceTraveled - 13400;
-      $('.ql').css('transform', 'translateX(-'+ qlDistance/4 + 'px) translateY('+ qlDistance/40 + 'px)');
+      $('.ql').css('transform', 'translateX(-'+ qlDistance/6 + 'px)translateZ('+ qlDistance/4 + 'px)');
     }
+    if(distanceTraveled > 14000){
+      $('.nightCover').css('opacity', .85);
+      $('body').css('filter', 'grayscale('+100+'%)');
+    }else{
+      $('.nightCover').css('opacity', 0);
+      $('body').css('filter', 'grayscale('+0+'%)');
+    }
+    // if(distanceTraveled > 14475){
+    //   $('.nightOverlay').css('opacity',.95);
+    // }
 
 
   }
@@ -92,6 +110,8 @@ $(document).ready(function() {
   $('.states').scroll(function(){
     calcMileage();
   });
+
+  // #343538
 
 
 

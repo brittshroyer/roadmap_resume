@@ -35,7 +35,7 @@ $(document).ready(function() {
       var diploma = distanceTraveled - 5500;
       $('.degree').fadeIn('slow');
     }else{
-      $('.degree').fadeOut('fast');
+      $('.degree').fadeOut('slow');
     }
     if(distanceTraveled > 5500 ){
       $('.hill').css('background', '#fff');
@@ -59,13 +59,10 @@ $(document).ready(function() {
       $('.i40').css('transform', 'translateZ('+i40distance/6+'px)');
       $('.hill').fadeOut('slow');
       $('.ground').css('background','#b1a688');
+        $('.cactus').fadeIn('fast')
     }else{
       $('.hill').fadeIn('slow');
-    }
-    if(distanceTraveled > 11000){
-      $('.cactus').fadeIn('fast');
-    }else{
-      $('.cactus').fadeOut('slow');
+      $('.cactus').fadeOut('fast');
     }
     if(distanceTraveled > 12000){
       var sunDistance = distanceTraveled - 12000;
@@ -79,17 +76,15 @@ $(document).ready(function() {
       $('.sky').css('opacity', 0);
       $('.sun').css('background','#ff9944');
     }
-    // if(distanceTraveled > 15000){
-    //   $('.desertSky').css('background', 'black');
-    // }
-
-    // if(distanceTraveled>4000){
-    //   $('.cloudBody').fadeOut();
-    // }
-    // if(distanceTraveled>2200){
-    //   var colgateDistance = distanceTraveled - 1000;
-    //   $('.colgate').css('transform', 'translateZ('+colgateDistance/10+'px)');
-    // }
+    if(distanceTraveled > 13300){
+      $('.ql').fadeIn('slow');
+    }else{
+      $('.ql').fadeOut('fast');
+    }
+    if(distanceTraveled > 13400){
+      var qlDistance = distanceTraveled - 13400;
+      $('.ql').css('transform', 'translateX(-'+ qlDistance/4 + 'px) translateY('+ qlDistance/40 + 'px)');
+    }
 
 
   }
@@ -98,17 +93,6 @@ $(document).ready(function() {
     calcMileage();
   });
 
-  // var calcMileage = $('.states').scroll(function(){
-  //   var distanceRemaining = $('.states').scrollTop();
-  //   console.log('distance remaining', distanceRemaining);
-  //   var distanceTraveled = initialDistance - distanceRemaining;
-  //   console.log('distance traveled:',distanceTraveled);
-  //   return distanceTraveled;
-  // });
-
-  // $('.states').scroll(function(){
-  //   console.log(calcMileage);
-  // });
 
 
 

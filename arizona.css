@@ -98,4 +98,46 @@
   top: 37%;
   left: 76%;
 }
-.
+.ql{
+  position: absolute;
+  top: 200px;
+  display: none;
+}
+.qlSign {
+  width: 200px;
+  height: 150px;
+  background: grey;
+  color: black;
+  position: absolute;
+  left: 204px;
+  text-align: center;
+  line-height: 7px;
+  font-family: 'Graduate', cursive;
+  font-size: 14px;
+  box-shadow: 1px 1px 1px black;
+}
+.qlSign h3{
+  font-size: 26px;
+  margin-bottom: 27px;
+  font-family: 'Racing Sans One', cursive;
+  color: red;
+  text-shadow: 1px 1px 1px white;
+}
+.qlSign span{
+  font-size: 30px;
+}
+.qlPost{
+  width: 10px;
+  height: 70px;
+  background-color: black;
+  position: absolute;
+  top: 150px;
+  border-radius: 0 0 30% 15%;
+}
+.qlLPost{
+  left: 240px;
+}
+.qlRPost{
+  left: 360px;
+  border-bottom: 8px solid #b1a688;
+}

@@ -129,37 +129,36 @@ body {
   margin-left: 1000px;
 }
 
+
 .hill1{
   position: absolute;;
   width: 80%;
   height: 400px;
-  background-color: #60BF72;
   top: 32%;
   transform: rotateY(45deg);
   border-radius: 43% 30%;
-  border: 1px solid green;
 }
 .hill2{
   position: absolute;
   width: 84%;
   height: 400px;
-  background-color: #60BF72;
   top: 32%;
   transform: rotateY(45deg);
   border-radius: 67% 23%;
-  border: 1px solid green;
   left: 30%;
 }
 .hill3{
 position: absolute;
 width: 99%;
 height: 426px;
-background-color: #60BF72;
 top: 22%;
 transform: rotateY(28deg);
 border-radius: 67% 23%;
-border: 1px solid green;
 left: 51%;
+}
+.hill{
+  background: #22D132;
+  transition: background 2s linear;
 }
 .hidden{
   display: none;
@@ -227,9 +226,10 @@ left: 51%;
   position: absolute;
   animation: colorchange;
   top: 39%;
-  background: #526F35;
+  background: #22D132;
   left: -1%;
-  -webkit-transition: background 2.5s linear;
+  -webkit-transition: background 2s linear;
+    /*border-top: 2px solid #1AA126;*/
 }
 .ohioWelcome{
   position: relative;

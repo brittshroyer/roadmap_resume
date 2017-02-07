@@ -33,15 +33,19 @@ $(document).ready(function() {
     }
     if(distanceTraveled > 5500 && distanceTraveled < 7700 ){
       var diploma = distanceTraveled - 5500;
-      $('.ground').css('background', '#fff');
       $('.degree').css('transform', 'translateY('+ diploma/5 + 'px)');
+    }
+    if(distanceTraveled > 5500 ){
+      $('.hill').css('background', '#fff');
+      $('.ground').css('background', '#fff');
     }else{
-      $('.ground').css('background', '#526F35');
+      $('.hill').css('background', '#22D132');
+      $('.ground').css('background', '#22D132');
     }
     if(distanceTraveled > 9000 ){
       var towerDistance = distanceTraveled - 9000;
       $('.degree').fadeOut('slow');
-      $('.bellTower').css('margin-top', -5.9 + towerDistance/55 +'%');
+      $('.bellTower').css('margin-top', towerDistance/50 +'%');
     }else{
       $('.degree').fadeIn('fast');
     }
@@ -53,23 +57,31 @@ $(document).ready(function() {
     if(distanceTraveled > 10000){
       var i40distance = distanceTraveled - 10000;
       $('.i40').css('transform', 'translateZ('+i40distance/6+'px)');
-      $('.hill').fadeOut(2000);
+      $('.hill').fadeOut('slow');
       $('.ground').css('background','#b1a688');
     }else{
       $('.hill').fadeIn('slow');
     }
+    if(distanceTraveled > 11000){
+      $('.cactus').fadeIn(2000);
+    }else{
+      $('.cactus').fadeOut('slow');
+    }
     if(distanceTraveled > 12000){
       var sunDistance = distanceTraveled - 12000;
-      $('.sun').css('transform', 'translateX('+ sunDistance/4 + 'px) translateY('+ sunDistance/10 + 'px)');
+      $('.sun').css('transform', 'translateX('+ sunDistance/4 + 'px) translateY('+ sunDistance/7 + 'px)');
+      $('.cactusPart').css('transform', 'translateX('+ sunDistance/12 + 'px)');
     }
-    if(distanceTraveled > 13000){
+    if(distanceTraveled > 12500){
       $('.sky').css('opacity', .65);
       $('.sun').css('background','red');
+    }else{
+      $('.sky').css('opacity', 0);
+      $('.sun').css('background','#ff9944');
     }
-    if(distanceTraveled > 15000){
-      $('.sky').css('opacity', .9);
-      $('.desertSky').css('background', 'black');
-    }
+    // if(distanceTraveled > 15000){
+    //   $('.desertSky').css('background', 'black');
+    // }
 
     // if(distanceTraveled>4000){
     //   $('.cloudBody').fadeOut();

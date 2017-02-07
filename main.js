@@ -31,9 +31,11 @@ $(document).ready(function() {
       $('.anchor').css('transform', 'translateZ('+ (stoplightDistance/6)+'px)');
       // $('.anchor').css('top', 36+'%)');
     }
-    if(distanceTraveled > 5500 && distanceTraveled < 7700 ){
+    if(distanceTraveled > 6500 && distanceTraveled < 7800 ){
       var diploma = distanceTraveled - 5500;
-      $('.degree').css('transform', 'translateY('+ diploma/5 + 'px)');
+      $('.degree').fadeIn('slow');
+    }else{
+      $('.degree').fadeOut('fast');
     }
     if(distanceTraveled > 5500 ){
       $('.hill').css('background', '#fff');
@@ -46,8 +48,6 @@ $(document).ready(function() {
       var towerDistance = distanceTraveled - 9000;
       $('.degree').fadeOut('slow');
       $('.bellTower').css('margin-top', towerDistance/50 +'%');
-    }else{
-      $('.degree').fadeIn('fast');
     }
     if(distanceTraveled < 5000 || distanceTraveled > 9000){
       $('#snow').addClass('hidden');
@@ -63,7 +63,7 @@ $(document).ready(function() {
       $('.hill').fadeIn('slow');
     }
     if(distanceTraveled > 11000){
-      $('.cactus').fadeIn(2000);
+      $('.cactus').fadeIn('fast');
     }else{
       $('.cactus').fadeOut('slow');
     }

@@ -98,9 +98,10 @@ text-shadow: 1px solid black;
   background-color: #fdf5e8;
   position: absolute;
   right: 2%;
-  top: -275px;
+  top: 120px;
   font-family: 'Playball', cursive;
   box-shadow: 3px 3px 1px #888888;
+  display: none;
 }
 .degree h4{
   width: 250px;

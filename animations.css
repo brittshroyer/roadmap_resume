@@ -16,5 +16,5 @@
 }
 @keyframes fly{
   from {transform: translateX(0px);}
-  to {transform: translateX(-1800px);}
+  to {transform: translateX(-2500px);}
 }

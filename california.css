@@ -71,7 +71,11 @@
 }
 .planePart{
   position: absolute;
-  background: white;
+  background: #004772;
+  /*border: 2px solid black;*/
+}
+.wing{
+  background: #004772;
 
 }
 .planeBody{
@@ -81,6 +85,7 @@
   top: 8%;
   left: 5%;
   border-left: 3px solid black;
+  box-shadow: 2px 2px 2px grey;
 }
 .topWing{
   width: 45px;
@@ -91,11 +96,10 @@
       transform: rotate(-26deg);
       border-top: 1px solid black;
       position: absolute;
-      background: white;
+
 }
 .bottomWing{
   position: absolute;
-      background: white;
       width: 45px;
       height: 80px;
       border-radius: 0% 0% 50% 50%;
@@ -114,8 +118,8 @@
 .prop{
   width: 10px;
   height: 37px;
-  border: 1px solid black;
     border-radius: 40% 40% 50% 50%;
+    background: black;
 }
 .topProp{
   top: -3px;
@@ -133,5 +137,67 @@
   top: -33%;
 }
 .fly{
-  animation: fly 10s linear;
+  animation: fly 12s linear;
+}
+.string{
+  height: 1px;
+  width: 46px;
+  top: 34px;
+  left: 300px;
+}
+.hook{
+  height: 69px;
+  width: 1px;
+}
+.topHook{
+  transform: rotate(-45deg);
+  top: 24px;
+  left: 368px
+}
+.bottomHook{
+  transform: rotate(39deg);
+  top: -27px;
+  left: 367px;
+}
+.banner{
+  width: 400px;
+  height: 104px;
+  left: 390px;
+  top: -20px;
+  background: orange;
+  border-radius: 4px;
+  box-shadow: 2px 3px 2px grey;
+}
+.banner h4{
+  color: dodgerblue;
+      text-shadow: 1px 1px 1px black;
+      font-size: 32px;
+      margin-top: 30px;
+      display: inline-block;
+      margin-left: 10px;
+      font-family: 'Racing Sans One', cursive;
+}
+.banner h3{
+  color: #004772;
+  display: inline-block;
+  /* text-align: center; */
+  margin-top: 11px;
+  font-size: 23px;
+  margin-left: 29px;
+  position: relative;
+  top: -25px;
+  left: -5px;
+  font-family: 'Racing Sans One', cursive;
+}
+.banner p{
+  font-size: 19px;
+  color: #004772;
+  display: inline-block;
+  position: relative;
+  left: 122px;
+  top: -74px;
+  font-family: 'Racing Sans One', cursive;
+}
+.soar{
+  background: rgba(0,0,0,0);
 }

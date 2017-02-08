@@ -132,12 +132,13 @@ $(document).ready(function() {
     }
     if(distanceTraveled > 20250){
       var planeDistance = distanceTraveled - 20250;
-      // $('.cave').remove();
-      // $('.caveHole').remove();
-      // $('.cliff').remove();
       $('.plane').addClass('fly');
+      setInterval(function(){
+        $('.prop').toggleClass('soar');
+      }, 10);
     }else{
       $('.plane').removeClass('fly');
+      $('.prop').removeClass('soar');
       // $('body').append($('.cave'));
       // $('body').append($('.caveHole'));
       // $('body').append($('.cliff'));

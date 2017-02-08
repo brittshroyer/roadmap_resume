@@ -132,11 +132,20 @@ $(document).ready(function() {
     }
     if(distanceTraveled > 20250){
       var planeDistance = distanceTraveled - 20250;
-      $('.planePart').css('transform','translateX(-' + planeDistance/6 + 'px)');
-      $('.topWing').css('transform','translateX(-' + planeDistance/6 + 'px)' + ' rotate(-'+ 26 + 'deg)');
-      $('.bottomWing').css('transform','translateX(-' + planeDistance/6 + 'px)' + ' rotate(-'+ 17 + 'deg)');
-
+      // $('.cave').remove();
+      // $('.caveHole').remove();
+      // $('.cliff').remove();
+      $('.plane').addClass('fly');
+    }else{
+      $('.plane').removeClass('fly');
+      // $('body').append($('.cave'));
+      // $('body').append($('.caveHole'));
+      // $('body').append($('.cliff'));
     }
+      // $('.cave').fadeIn();
+      // $('.caveHole').fadeIn();
+      // $('.caliWelcome').fadeIn();
+
   }
 
   $('.states').scroll(function(){

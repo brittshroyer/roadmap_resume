@@ -22,7 +22,6 @@
   height: 900px;
   width: 85%;
   position: absolute;
-  animation: colorchange;
   top: 0%;
   right: -28%;
   border-radius: 32%;
@@ -77,38 +76,38 @@
 }
 .planeBody{
   width: 227px;
-  height: 68px;
+  height: 58px;
   border-radius: 30% 50% 10% 50%;
   top: 8%;
-  left: 50%;
+  left: 5%;
   border-left: 3px solid black;
 }
 .topWing{
   width: 45px;
-  height: 50px;
-  border-radius: 50% 50% 0 0;
-  top: 5%;
-  left: 55%;
-  transform: rotate(-26deg);
-  border-top: 1px solid black;
-  position: absolute;
-  background: white;
+      height: 50px;
+      border-radius: 50% 50% 0 0;
+      top: -28px;
+      left: 151px;
+      transform: rotate(-26deg);
+      border-top: 1px solid black;
+      position: absolute;
+      background: white;
 }
 .bottomWing{
   position: absolute;
-  background: white;
-  width: 45px;
-  height: 80px;
-  border-radius: 0% 0% 50% 50%;
-  top: 11%;
-  left: 57%;
-  transform: rotate(-17deg);
+      background: white;
+      width: 45px;
+      height: 80px;
+      border-radius: 0% 0% 50% 50%;
+      top: 20px;
+      left: 176px;
+      transform: rotate(-17deg);
 }
 .planeTail{
   width: 45px;
   height: 67px;
-  top: 52px;
-  left: 897px;
+  top: -28px;
+  left: 256px;
   border-top: 1px solid black;
   border-radius: 50% 50% 0 0;
 }
@@ -119,12 +118,20 @@
     border-radius: 40% 40% 50% 50%;
 }
 .topProp{
-  top: 77px;
-  left: 711px;
-  height: 29px;
+  top: -3px;
+      left: 66px;
+      height: 29px;
 }
 .bottomProp{
-  top: 110px;
-  left: 711px;
+  top: 31px;
+  left: 66px;
 
+}
+.plane{
+  position: relative;
+  left: 100%;
+  top: -33%;
+}
+.fly{
+  animation: fly 10s linear;
 }

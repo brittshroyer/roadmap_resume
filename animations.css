@@ -14,3 +14,7 @@
   from {transform: translateX(0px) translateY(0px);}
   to{ transform: translateX(-1500px) translateY(300px);}
 }
+@keyframes fly{
+  from {transform: translateX(0px);}
+  to {transform: translateX(-1800px);}
+}

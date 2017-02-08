@@ -27,6 +27,7 @@
   right: -28%;
   border-radius: 32%;
   display: none;
+  border: 3px solid #8B4513;
 }
 .cave{
   width: 130px;
@@ -37,6 +38,7 @@
   margin: 0 auto;
   top: 306px;
   display: none;
+  border: 2px solid grey;
 }
 .caveHole{
   position: relative;
@@ -47,4 +49,24 @@
   top: 264px;
   background: #7ec0ee;
   display: none;
+}
+.caliWelcome{
+  width: 85px;
+  height: 43px;
+  margin: 0 auto;
+  position: relative;
+  background: #0DA7FF;
+  bottom: 100px;
+  color: #E3E228;
+  text-align: center;
+  font-family: 'Playball', cursive;
+  border: 1px solid white;
+  border-radius: 2px;
+  box-shadow: 1px 2px 2px black;
+}
+.caliWelcome p{
+  margin-top: 1px;
+}
+.caliWelcome span{
+  font-size: 11px;
 }

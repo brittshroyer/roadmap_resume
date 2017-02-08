@@ -127,6 +127,7 @@ $(document).ready(function() {
       $('.cliff').css('transform','translateZ(' + caveDistance/6 + 'px)' + ' rotate(-'+ 23 + 'deg)');
       $('.cave').css('transform','translateZ(' + caveDistance/6 + 'px)');
       $('.caveHole').css('transform','translateZ(' + caveDistance/6 + 'px)');
+      $('.caliWelcome').css('transform','translateZ(' + caveDistance/6 + 'px)');
     }
   }
 

@@ -36,7 +36,12 @@ $(document).ready(function() {
     }else{
       $('.degree').fadeOut('slow');
     }
-    if(distanceTraveled > 5500 ){
+    if(distanceTraveled > 5200){
+      $('.hill').css('border', 2 + 'px solid white');
+    }else{
+      $('.hill').css('border', 2 + 'px solid green');
+    }
+    if(distanceTraveled > 6000 ){
       $('.hill').css('background', '#fff');
       $('.ground').css('background', '#fff');
     }else{
@@ -100,21 +105,28 @@ $(document).ready(function() {
       $('.shootingStar').removeClass('animateStar');
       // $('body').append($('.sky'));
     }
-    if(distanceTraveled > 15500){
+    if(distanceTraveled > 15750){
       $('body').css('filter', 'grayscale('+0+'%)');
       $('.nightCover').css('opacity', 0);
       $('.sky').css('opacity', 0);
       $('.rock').fadeOut();
       $('.ground').css('background', '#006400');
       $('.ground').css('left', 45 + '%');
+      $('.cliff').fadeIn(2000);
+      $('.cave').fadeIn(2100);
+      $('.caveHole').fadeIn();
     }else{
       $('.rock').fadeIn();
       $('.ground').css('left', -1 + '%');
+      $('.cliff').fadeOut();
+      $('.cave').fadeOut();
+      $('.caveHole').fadeOut();
     }
     if(distanceTraveled > 16500){
       var caveDistance = distanceTraveled - 16500;
       $('.cliff').css('transform','translateZ(' + caveDistance/6 + 'px)' + ' rotate(-'+ 23 + 'deg)');
       $('.cave').css('transform','translateZ(' + caveDistance/6 + 'px)');
+      $('.caveHole').css('transform','translateZ(' + caveDistance/6 + 'px)');
     }
   }
 

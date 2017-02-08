@@ -26,13 +26,25 @@
   top: 0%;
   right: -28%;
   border-radius: 32%;
+  display: none;
 }
 .cave{
-  width: 132px;
-  height: 81px;
+  width: 130px;
+  height: 220px;
   background: black;
   border-radius: 50% 50% 0 0;
   position: relative;
   margin: 0 auto;
   top: 306px;
+  display: none;
+}
+.caveHole{
+  position: relative;
+  margin: 0 auto;
+  width: 24px;
+  height: 134px;
+  border-radius: 50% 50% 0 0;
+  top: 264px;
+  background: #7ec0ee;
+  display: none;
 }

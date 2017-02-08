@@ -175,7 +175,8 @@ left: 51%;
 }
 .hill{
   background: #22D132;
-  transition: background 2s linear;
+  transition: All 2s linear;
+  border: 2px solid green;
 }
 .hidden{
   display: none;

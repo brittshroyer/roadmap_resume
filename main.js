@@ -66,7 +66,7 @@ $(document).ready(function() {
     if(distanceTraveled > 12000){
       var sunDistance = distanceTraveled - 12000;
       $('.sun').css('transform', 'translateX('+ sunDistance/4 + 'px) translateY('+ sunDistance/7 + 'px)');
-      $('.cactusPart').css('transform', 'translateX('+ sunDistance/16 + 'px)');
+      $('.cactusPart').css('transform', 'translateX('+ sunDistance/12 + 'px)');
     }
     if(distanceTraveled > 12500){
       $('.sky').css('opacity', .65);
@@ -93,12 +93,28 @@ $(document).ready(function() {
       $('.nightCover').css('opacity', 0);
       $('body').css('filter', 'grayscale('+0+'%)');
     }
-    if(distanceTraveled > 14450){
+    if(distanceTraveled > 15000){
       $('.shootingStar').addClass('animateStar');
-      setTimeout(function(){
-        $('.shootingStar').removeClass('animateStar');
-        console.log('timeout working!');
-      }, 1500);
+      // $('body').remove($('.sky'));
+    } else {
+      $('.shootingStar').removeClass('animateStar');
+      // $('body').append($('.sky'));
+    }
+    if(distanceTraveled > 15500){
+      $('body').css('filter', 'grayscale('+0+'%)');
+      $('.nightCover').css('opacity', 0);
+      $('.sky').css('opacity', 0);
+      $('.rock').fadeOut();
+      $('.ground').css('background', '#006400');
+      $('.ground').css('left', 45 + '%');
+    }else{
+      $('.rock').fadeIn();
+      $('.ground').css('left', -1 + '%');
+    }
+    if(distanceTraveled > 16500){
+      var caveDistance = distanceTraveled - 16500;
+      $('.cliff').css('transform','translateZ(' + caveDistance/6 + 'px)' + ' rotate(-'+ 23 + 'deg)');
+      $('.cave').css('transform','translateZ(' + caveDistance/6 + 'px)');
     }
   }
 

@@ -8,14 +8,14 @@ body {
   right: 0;
   height: 1000px;
   overflow: hidden;
-  transition: filter 2s linear;
+  transition: background 8s linear;
 }
 .nightOverlay{
   transition: opacity 3s linear;
 }
 .sky{
   opacity: 0;
-  transition: opacity 3s linear;
+  transition: opacity 2s linear;
   width: 105%;
   height: 45%;
   top: -1%;
@@ -346,7 +346,7 @@ left: 51%;
   position: relative;
   margin: auto;
   width: 600px;
-  height: 3000px;
+  height: 4500px;
   background-image: url('./images/concrete_wall.png');
 }
 .signsWrapper{
@@ -416,7 +416,7 @@ left: 51%;
 .dash {
   background-color: #fff;
   width: 9px;
-  height: 75px;
+  height: 125px;
   font-size: 800%;
   position: absolute;
   left: 50%;

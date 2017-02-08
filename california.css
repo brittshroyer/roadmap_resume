@@ -1,0 +1,38 @@
+.beach{
+  width: 600px;
+  height: 400px;
+  background: beige;
+  position: absolute;
+  left: -4%;
+  bottom: 9%;
+  transform: rotate(-10deg);
+}
+.sea{
+  width: 700px;
+  height: 200px;
+  bottom: 335px;
+  background: #004772;
+  position: absolute;
+  z-index: -1;
+  left: -1%
+}
+.cliff{
+  transform: rotate(-23deg);
+  background: #654321;
+  height: 900px;
+  width: 85%;
+  position: absolute;
+  animation: colorchange;
+  top: 0%;
+  right: -28%;
+  border-radius: 32%;
+}
+.cave{
+  width: 132px;
+  height: 81px;
+  background: black;
+  border-radius: 50% 50% 0 0;
+  position: relative;
+  margin: 0 auto;
+  top: 306px;
+}

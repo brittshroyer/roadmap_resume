@@ -56,7 +56,7 @@
   margin: 0 auto;
   position: relative;
   background: #0DA7FF;
-  bottom: 100px;
+  bottom: 102px;
   color: #E3E228;
   text-align: center;
   font-family: 'Playball', cursive;
@@ -69,4 +69,62 @@
 }
 .caliWelcome span{
   font-size: 11px;
+}
+.planePart{
+  position: absolute;
+  background: white;
+
+}
+.planeBody{
+  width: 227px;
+  height: 68px;
+  border-radius: 30% 50% 10% 50%;
+  top: 8%;
+  left: 50%;
+  border-left: 3px solid black;
+}
+.topWing{
+  width: 45px;
+  height: 50px;
+  border-radius: 50% 50% 0 0;
+  top: 5%;
+  left: 55%;
+  transform: rotate(-26deg);
+  border-top: 1px solid black;
+  position: absolute;
+  background: white;
+}
+.bottomWing{
+  position: absolute;
+  background: white;
+  width: 45px;
+  height: 80px;
+  border-radius: 0% 0% 50% 50%;
+  top: 11%;
+  left: 57%;
+  transform: rotate(-17deg);
+}
+.planeTail{
+  width: 45px;
+  height: 67px;
+  top: 52px;
+  left: 897px;
+  border-top: 1px solid black;
+  border-radius: 50% 50% 0 0;
+}
+.prop{
+  width: 10px;
+  height: 37px;
+  border: 1px solid black;
+    border-radius: 40% 40% 50% 50%;
+}
+.topProp{
+  top: 77px;
+  left: 711px;
+  height: 29px;
+}
+.bottomProp{
+  top: 110px;
+  left: 711px;
+
 }

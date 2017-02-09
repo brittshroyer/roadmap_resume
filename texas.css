@@ -1,0 +1,141 @@
+.leftPull{
+  transform: rotate(13deg);
+  height: 475px;
+}
+.rightPull{
+  top: 38%;
+}
+.capitol{
+  position: relative;
+  top: 5%;
+  width: 100px;
+  margin: 0 auto;
+  right: 20px;
+  top: 405px;
+
+}
+.stick{
+  display: none;
+}
+.capitolPiece{
+  position: absolute;
+  background: #ffe4e1;
+  border: 1px solid black;
+  border-bottom: none;
+  /*border: 1px solid black;*/
+left: 25%;
+}
+.topper{
+  width: 8px;
+  height: 14px;
+  border-radius: 50% 50% 0 0;
+  left: 65px;
+  bottom: -1px;
+}
+.divider{
+  width: 1px;
+  height: 52px;
+  background: black;
+  transform: rotate(90deg);
+  position: absolute;
+  z-index: 1;
+  left: 68px;
+}
+.dividerUp{
+  top: -9px;
+
+}
+.dividerDown{
+  top: 15px;
+}
+.column{
+  width: 1px;
+  background: black;
+  position: absolute;
+  z-index: 1;
+}
+.column1{
+  height: 16px;
+  left: 47px;
+  top: 19px;
+}
+.column2{
+  height: 12px;
+      left: 53px;
+      top: 19px;
+}
+.column3{
+  height: 9px;
+  left: 60px;
+  top: 19px
+}
+.column4{
+  height: 9px;
+  left: 79px;
+  top: 19px;
+}
+.column5{
+  height: 12px;
+  left: 85px;
+  top: 19px;
+}
+.column6{
+  height: 17px;
+  left: 91px;
+  top: 19px;
+
+}
+.dome{
+  width: 52px;
+  height: 38px;
+  border-radius: 50% 50% 0 0;
+  top: -5px;
+  /* margin: 0 auto; */
+  left: 43px;
+  border-bottom: none;
+}
+.triangleLeft{
+  background: black;
+  width: 1.2px;
+  height: 32px;
+  /* border: 1px solid black; */
+  transform: rotate(57deg);
+  top: 15px;
+  left: 56px;
+  z-index: 1;
+  border: none;
+}
+.triangleRight{
+  width: 1.2px;
+  height: 30px;
+  background: black;
+  /* border: 1px solid black; */
+  left: 82px;
+  top: 16px;
+  z-index: 1;
+  transform: rotate(-54deg);
+  border: none;
+}
+.middle{
+  width: 52px;
+  height: 30px;
+  left: 43px;
+  margin-top: 32px;
+  border-top: none;
+}
+.bodyBlock{
+  width: 110px;
+  height: 105px;
+  /* top: -8%; */
+  margin-top: 47%;
+  left: 13px;
+}
+.entrance{
+  width: 30px;
+      height: 50px;
+      border-radius: 50% 50% 0 0;
+      left: 51%;
+      margin-top: 102px;
+      border: 1px solid black;
+      border-bottom: none;
+}

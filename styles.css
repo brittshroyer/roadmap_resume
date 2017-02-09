@@ -174,9 +174,9 @@ border-radius: 67% 23%;
 left: 51%;
 }
 .hill{
-  background: #22D132;
+  background: #007B0C;
   transition: All 2s linear;
-  border: 2px solid green;
+  border: 2px solid #005C09;
 }
 .hillRoll{
   transform: translateX(0px);
@@ -247,7 +247,7 @@ left: 51%;
   position: absolute;
   animation: colorchange;
   top: 39%;
-  background: #22D132;
+  background: #007B0C;
   left: -1%;
   -webkit-transition: background 2s linear;
     /*border-top: 2px solid #1AA126;*/

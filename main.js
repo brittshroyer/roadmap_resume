@@ -39,14 +39,14 @@ $(document).ready(function() {
     if(distanceTraveled > 5200){
       $('.hill').css('border', 2 + 'px solid white');
     }else{
-      $('.hill').css('border', 2 + 'px solid green');
+      $('.hill').css('border', 2 + 'px solid #005C09');
     }
     if(distanceTraveled > 6000 ){
       $('.hill').css('background', '#fff');
       $('.ground').css('background', '#fff');
     }else{
-      $('.hill').css('background', '#22D132');
-      $('.ground').css('background', '#22D132');
+      $('.hill').css('background', '#007B0C');
+      $('.ground').css('background', '#007B0C');
     }
     if(distanceTraveled > 9000 ){
       var towerDistance = distanceTraveled - 9000;
@@ -114,14 +114,16 @@ $(document).ready(function() {
       $('.ground').css('background', '#006400');
       $('.ground').css('left', 45 + '%');
       $('.cliff').fadeIn(2000);
-      $('.cave').fadeIn(2100);
-      $('.caveHole').fadeIn();
+      $('.cave').fadeIn(2000);
+      $('.caveHole').fadeIn(2000);
+      $('.caliWelcome').fadeIn(2000);
     }else{
       $('.rock').fadeIn();
       $('.ground').css('left', -1 + '%');
       $('.cliff').fadeOut();
       $('.cave').fadeOut();
       $('.caveHole').fadeOut();
+      $('.caliWelcome').fadeOut();
     }
     if(distanceTraveled > 16500){
       var caveDistance = distanceTraveled - 16500;
@@ -141,18 +143,44 @@ $(document).ready(function() {
     }else{
       $('.plane').removeClass('fly');
     }
-    if(distanceTraveled > 20700){
+    if(distanceTraveled > 20900){
       $('.hill').css('background', '#78AB46');
       $('.ground').css('background', '#78AB46');
       $('.hill').css('border', 2 + 'px solid green');
     }
-    if(distanceTraveled > 21000){
+    if(distanceTraveled > 21500){
       $('.hill1').css('left', '-' + 18 + '%' );
       $('.hill').addClass('hillRoll');
     }else{
       $('.hill1').css('left', 0);
       $('.hill').removeClass('hillRoll');
     }
+    if(distanceTraveled > 22400){
+      // var hillDistance = distanceTraveled - 21100;
+      // $('.hill1').css('transform', 'translateX(-' + hillDistance/6 + 'px)');
+      // $('.hill2').css('transform', 'translateX(' + hillDistance/6 + 'px)');
+      $('.hill1').addClass('leftPull');
+      $('.hill2').addClass('rightPull');
+    // }else{
+    //   $('.hill1').css('transform', 'none');
+    //   $('.hill2').css('transform', 'none');
+  }else{
+    $('.hill1').removeClass('leftPull');
+    $('.hill2').removeClass('rightPull');
+  }
+  if(distanceTraveled > 22900){
+    var capitolDistance = distanceTraveled - 22900
+    $('.capitol').css('transform','translateY(-' + capitolDistance/6 + 'px)');
+  }
+  if(distanceTraveled > 23000){
+    $('.stick').fadeIn();
+  }else{
+    $('.stick').fadeOut();
+  }
+  if(distanceTraveled > 23923){
+    var capApproach = distanceTraveled - 23923;
+    $('.capitol').css('transform', 'translateY(-' + 170 + 'px)' + 'scale(' + capitolDistance/1000 + ')');
+  }
 
       // $('.cave').fadeIn();
       // $('.caveHole').fadeIn();

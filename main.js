@@ -181,7 +181,7 @@ $(document).ready(function() {
     var capApproach = distanceTraveled - 23923;
     $('.capitol').css('transform', 'translateY(-' + 170 + 'px)' + 'scale(' + capitolDistance/1000 + ')');
     $('.capitol').css('top', 405 - capApproach/7 + 'px');
-    $('.capitol').css('right', 20 + capApproach/53 + 'px');
+    $('.capitol').css('right', 20 + capApproach/55 + 'px');
   }
 
       // $('.cave').fadeIn();

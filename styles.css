@@ -178,6 +178,9 @@ left: 51%;
   transition: All 2s linear;
   border: 2px solid green;
 }
+.hillRoll{
+  transform: translateX(0px);
+}
 .hidden{
   display: none;
 }

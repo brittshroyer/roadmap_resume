@@ -135,11 +135,12 @@ $(document).ready(function() {
     if(distanceTraveled > 20250){
       var planeDistance = distanceTraveled - 20250;
       $('.plane').addClass('fly');
-      // setInterval(function(){
-      //   $('.prop').toggleClass('soar');
-      // }, 10);
-      // setTimeout(function(){
-      // }, 11000);    // setTimeout(soaring, 12000);
+      var propeller = setInterval(function(){
+        $('.prop').toggleClass('soar');
+      }, 10);
+      setTimeout(function(){
+        clearInterval(propeller);
+      }, 11000);    // setTimeout(soaring, 12000);
     }else{
       $('.plane').removeClass('fly');
     }
@@ -182,6 +183,15 @@ $(document).ready(function() {
     $('.capitol').css('transform', 'translateY(-' + 170 + 'px)' + 'scale(' + capitolDistance/1000 + ')');
     $('.capitol').css('top', 405 - capApproach/7 + 'px');
     $('.capitol').css('right', 20 + capApproach/55 + 'px');
+  }
+  if(distanceTraveled > 25000){
+    $('.bootstrap').addClass('rise1');
+    $('.chrome').addClass('rise2');
+    $('.react').addClass('rise3');
+    $('.js').addClass('rise4');
+    $('.htmlCss').addClass('rise5');
+    $('.git').addClass('rise6');
+    $('.node').addClass('rise7');
   }
 
       // $('.cave').fadeIn();

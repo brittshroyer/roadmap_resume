@@ -18,3 +18,31 @@
   from {transform: translateX(0px);}
   to {transform: translateX(-2500px);}
 }
+@keyframes b1{
+  from{top: 375px;}
+  to{top: 175px;  }
+}
+@keyframes b2{
+  from{top: 375px;}
+  to{top: 120px; }
+}
+@keyframes b3{
+  from{top: 375px;}
+  to{top: 250px;  }
+}
+@keyframes b4{
+  from{top: 375px;}
+  to{top: 155px;  }
+}
+@keyframes b5{
+  from{top: 375px;}
+  to{top: 60px;  }
+}
+@keyframes b6{
+  from{top: 375px;}
+  to{top: 100px;  }
+}
+@keyframes b7{
+  from{top: 375px;}
+  to{top: 125px;  }
+}

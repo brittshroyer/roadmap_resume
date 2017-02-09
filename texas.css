@@ -11,7 +11,7 @@
   width: 100px;
   margin: 0 auto;
   right: 20px;
-  top: 405px;
+  top: 410px;
 
 }
 .stick{
@@ -229,4 +229,68 @@ left: 25%;
    -ms-transform:     rotate(-70deg);
    -o-transform:      rotate(-70deg);
    content: '';
+}
+
+.building{
+  background: grey;
+  width: 30px;
+  height: 250px;
+  position: absolute;
+  top: 450px;
+}
+.bootstrap{
+  left: 75px;
+  width: 45px;
+}
+.chrome{
+  left: 250px;
+  width: 35px;
+}
+.react{
+  left: 400px;
+  width: 60px;
+}
+.js{
+  left: 865px;
+  width: 45px;
+}
+.htmlCss{
+  left: 1050px;
+  width: 55px;
+}
+.git{
+  left: 1210px;
+  width: 60px;
+}
+.node{
+  left: 1350px;
+  width: 50px;
+}
+.rise1{
+  animation: b1 2.5s;
+  top: 175px;
+}
+.rise2{
+  animation: b2 3s;
+  top: 120px;
+}
+.rise3{
+  animation: b3 2s;
+  top: 250px;
+}
+.rise4{
+  animation: b4 3.5s;
+  top: 155px;
+}
+.rise5{
+  animation: b5 2.5s;
+  top: 60px;
+}
+.rise6{
+  animation: b6 2s;
+  top: 100px;
+}
+.rise7{
+  animation: b7 2.5s;
+  top: 125px;
 }

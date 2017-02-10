@@ -129,6 +129,11 @@ left: 25%;
   /* top: -8%; */
   margin-top: 47%;
   left: 13px;
+  background-image: url('./images/ga.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 86%;
+  background-position-y: 26%;
 }
 .entrance{
   width: 30px;
@@ -138,6 +143,7 @@ left: 25%;
       margin-top: 102px;
       border: 1px solid black;
       border-bottom: none;
+      background: -webkit-radial-gradient(black, grey);
 }
 .flag{
   background: white;

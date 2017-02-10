@@ -5,6 +5,19 @@ $(document).ready(function() {
 
   var initialDistance = $('.states').scrollTop();
 
+  $(document).keydown(function(e){
+    if(e.which == 38){
+      console.log('keypress working!');
+      $(".states").animate({
+              scrollTop:  '-=250'
+         });
+    }else if(e.which == 40){
+      $('.states').animate({
+          scrollTop: '+=250'
+      });
+    }
+  });
+
   var calcMileage = function(){
     var distanceRemaining = $('.states').scrollTop();
     var distanceTraveled = initialDistance - distanceRemaining;
@@ -149,7 +162,7 @@ $(document).ready(function() {
     }
     if(distanceTraveled > 20900){
       $('.ground').css('background', '#78AB46');
-      $('.hill').css('border', 2 + 'px solid green');
+      // $('.hill').css('border', 2 + 'px solid green');
     }
     if(distanceTraveled > 21500){
       $('.hill1').css('left', '-' + 18 + '%' );

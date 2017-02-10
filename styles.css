@@ -10,6 +10,50 @@ body {
   overflow: hidden;
   transition: background 8s linear;
 }
+.btn{
+  display: block;
+  width: 100px;
+  height: 50px;
+  margin: 0 auto;
+  bottom: 30px;
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  bottom: 50%;
+}
+.contact{
+  position: absolute;
+  width: 400px;
+  top: 47%;
+  left: 40%;
+  /* margin: 0 auto; */
+  z-index: 1;
+}
+.linkedin{
+  width: 100px;
+  height: 100px;
+  background: white;
+  position: absolute;
+  z-index: 1;
+  bottom: 50%;
+}
+.fa{
+  position: absolute;
+  z-index: 1;
+  bottom: 50px;
+  display: block;
+}
+.fa-github{
+  left: 45%
+}
+.fa-linkedin-square{
+  right: 45%;
+}
+.messageForm{
+  display: block;
+  width: 400px;
+  margin: 0 auto;
+}
 .nightOverlay{
   transition: opacity 3s linear;
 }
@@ -276,13 +320,15 @@ left: 51%;
   font-family: 'Roboto', sans-serif;
   color: white;
   letter-spacing: 2px;
-  font-size: 20px;
+  font-size: 12px;
   text-shadow: 2px 2px brown;
+  margin-bottom: -29px;
 }
 .ohioSign p{
   color: white;
-  font-size: 18px;
+  font-size: 34px;
   font-family: 'Dancing Script', cursive;
+  margin-bottom: 15px;
 
 }
 
@@ -339,7 +385,7 @@ left: 51%;
   width: 600px;
   height: 2000px;
   transform-style: preserve-3d;
-  overflow: scroll;
+  overflow: auto;
   transform: translate(-50%, 0);
   position: absolute;
   top: -100%;

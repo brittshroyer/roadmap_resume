@@ -11,7 +11,7 @@
   width: 100px;
   margin: 0 auto;
   right: 20px;
-  top: 410px;
+  top: 440px;
 
 }
 .stick{
@@ -19,7 +19,7 @@
 }
 .capitolPiece{
   position: absolute;
-  background: #ffe4e1;
+  background: #A35538;
   border: 1px solid black;
   border-bottom: none;
   /*border: 1px solid black;*/
@@ -39,7 +39,7 @@ left: 25%;
   transform: rotate(90deg);
   position: absolute;
   z-index: 1;
-  left: 68px;
+  left: 69px;
 }
 .dividerUp{
   top: -9px;
@@ -97,11 +97,11 @@ left: 25%;
 .triangleLeft{
   background: black;
   width: 1.2px;
-  height: 32px;
+  height: 33px;
   /* border: 1px solid black; */
   transform: rotate(57deg);
   top: 15px;
-  left: 56px;
+  left: 57px;
   z-index: 1;
   border: none;
 }
@@ -236,23 +236,43 @@ left: 25%;
   width: 30px;
   height: 250px;
   position: absolute;
-  top: 450px;
+  top: 650px;
 }
 .bootstrap{
   left: 75px;
   width: 45px;
+  background-image: url('./images/aus1.png');
+  background-position: center;
+  background-size: 900%;
+  background-repeat: no-repeat;
+  background-color: rgba(0,0,0,0);
 }
 .chrome{
   left: 250px;
   width: 35px;
+  background-image: url('./images/aus3.png');
+  background-position: center;
+  background-size: 800%;
+  background-repeat: no-repeat;
+  background-color: rgba(0,0,0,0);
 }
 .react{
   left: 400px;
   width: 60px;
+  background-image: url('./images/aus4.png');
+  background-position: center;
+  background-size: 800%;
+  background-repeat: no-repeat;
+  background-color: rgba(0,0,0,0);
 }
 .js{
   left: 865px;
   width: 45px;
+  background-image: url('./images/aus5.png');
+  background-position: center;
+  background-size: 900%;
+  background-repeat: no-repeat;
+  background-color: rgba(0,0,0,0);
 }
 .htmlCss{
   left: 1050px;
@@ -261,10 +281,20 @@ left: 25%;
 .git{
   left: 1210px;
   width: 60px;
+  background-image: url('./images/aus6.png');
+  background-position: center;
+  background-size: 800%;
+  background-repeat: no-repeat;
+  background-color: rgba(0,0,0,0);
 }
 .node{
   left: 1350px;
   width: 50px;
+  background-image: url('./images/aus7.png');
+  background-position: center;
+  background-size: 700%;
+  background-repeat: no-repeat;
+  background-color: rgba(0,0,0,0);
 }
 .rise1{
   animation: b1 2.5s;
@@ -276,7 +306,7 @@ left: 25%;
 }
 .rise3{
   animation: b3 2s;
-  top: 250px;
+  top: 200px;
 }
 .rise4{
   animation: b4 3.5s;
@@ -293,4 +323,44 @@ left: 25%;
 .rise7{
   animation: b7 2.5s;
   top: 125px;
+}
+.header{
+  position: absolute;
+  width: 150px;
+  height: 50px;
+  background: rgba(0,0,0,0);
+  transform: rotate(-65deg);
+  top: 100px;
+  color: black;
+  text-align: center;
+  font-size: 20px;
+  font-family: 'Inconsolata', monospace;
+  display: none;
+}
+.s1head{
+  left: 37px;
+}
+.s2head{
+  left: 201px;
+  top: 70px;
+}
+.s3head{
+  left: 365px;
+  top: 167px;
+}
+.s4head{
+  left: 826px;
+      top: 61px;
+}
+.s5head{
+  left: 1002px;
+  top: 0;
+}
+.s6head{
+  left: 1168px;
+      top: 36px;
+}
+.s7head{
+  left: 1307px;
+      top: 57px;
 }

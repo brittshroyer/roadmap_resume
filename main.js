@@ -18,7 +18,7 @@ $(document).ready(function() {
       $('.cloudBody').css('margin-left', -1100 + i90Distance/3 + 'px');
       $('.cloud2').css('margin-left', 1000 - i90Distance/5 + 'px');
     }
-    if(distanceTraveled > 1900 && distanceTraveled < 7900){
+    if(distanceTraveled > 1900 && distanceTraveled < 5800){
       $('.bellTower').css('margin-top', 30 - distanceTraveled/220 +'%');
     }
     if(distanceTraveled>2000){
@@ -51,7 +51,7 @@ $(document).ready(function() {
     if(distanceTraveled > 9000 ){
       var towerDistance = distanceTraveled - 9000;
       $('.degree').fadeOut('slow');
-      $('.bellTower').css('margin-top', towerDistance/50 +'%');
+      $('.bellTower').css('margin-top', 3.76818 + towerDistance/50 +'%');
     }
     if(distanceTraveled < 5000 || distanceTraveled > 9000){
       $('#snow').addClass('hidden');
@@ -61,12 +61,13 @@ $(document).ready(function() {
     if(distanceTraveled > 10000 && distanceTraveled < 20750){
       var i40distance = distanceTraveled - 10000;
       $('.i40').css('transform', 'translateZ('+i40distance/6+'px)');
-      $('.hill').fadeOut('slow');
+      $('.hill').fadeOut(2000);
       $('.ground').css('background','#b1a688');
-        $('.cactus').fadeIn('fast')
+        $('.cactus').fadeIn('slow')
     }else{
       $('.hill').fadeIn('slow');
       $('.cactus').fadeOut('fast');
+      // $('.tower').fadeIn('fast');
     }
     if(distanceTraveled > 12000){
       var sunDistance = distanceTraveled - 12000;
@@ -135,6 +136,8 @@ $(document).ready(function() {
     if(distanceTraveled > 20250){
       var planeDistance = distanceTraveled - 20250;
       $('.plane').addClass('fly');
+      $('.hill').css('background', '#78AB46');
+      $('.hill').css('border', 2 + 'px solid green');
       var propeller = setInterval(function(){
         $('.prop').toggleClass('soar');
       }, 10);
@@ -145,7 +148,6 @@ $(document).ready(function() {
       $('.plane').removeClass('fly');
     }
     if(distanceTraveled > 20900){
-      $('.hill').css('background', '#78AB46');
       $('.ground').css('background', '#78AB46');
       $('.hill').css('border', 2 + 'px solid green');
     }
@@ -192,6 +194,18 @@ $(document).ready(function() {
     $('.htmlCss').addClass('rise5');
     $('.git').addClass('rise6');
     $('.node').addClass('rise7');
+    setTimeout(function(){
+      $('.header').fadeIn('slow');
+    },3500);
+  }else{
+    $('.bootstrap').removeClass('rise1');
+    $('.chrome').removeClass('rise2');
+    $('.react').removeClass('rise3');
+    $('.js').removeClass('rise4');
+    $('.htmlCss').removeClass('rise5');
+    $('.git').removeClass('rise6');
+    $('.node').removeClass('rise7');
+    $('.header').fadeOut();
   }
 
       // $('.cave').fadeIn();

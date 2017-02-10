@@ -1,7 +1,29 @@
 $(document).ready(function() {
 //scroll to start of drive
+$('#ready').mouseover(function(){
+  $(this).css('background-color', '#509CF0');
+});
+$('#ready').mouseout(function(){
+  $(this).css('background-color', 'grey');
+});
+$('#ready').on('click', function(){
+  $('#playAgain').css('display', 'none');
+  $('.gameover').fadeOut(3000);
+});
+$('#restart').mouseover(function(){
+  $(this).css('background-color', '#509CF0');
+});
+$('#restart').mouseout(function(){
+  $(this).css('background-color', 'grey');
+});
+
+$('#restart').on('click', function(){
+  location.reload();
+});
+
   $('.states').scrollTop($('.states')[0].scrollHeight);
   console.log($('.states')[0].scrollHeight);
+
 
   var initialDistance = $('.states').scrollTop();
 
@@ -210,6 +232,10 @@ $(document).ready(function() {
     setTimeout(function(){
       $('.header').fadeIn('slow');
     },3500);
+    setTimeout(function(){
+      $('#blackBackDrop').fadeIn('slow');
+      $('#contact').fadeIn('slow');
+    }, 8000);
   }else{
     $('.bootstrap').removeClass('rise1');
     $('.chrome').removeClass('rise2');
@@ -218,7 +244,7 @@ $(document).ready(function() {
     $('.htmlCss').removeClass('rise5');
     $('.git').removeClass('rise6');
     $('.node').removeClass('rise7');
-    $('.header').fadeOut();
+    $('.header').css('display', 'none');
   }
 
       // $('.cave').fadeIn();

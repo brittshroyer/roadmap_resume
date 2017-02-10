@@ -10,6 +10,95 @@ body {
   overflow: hidden;
   transition: background 8s linear;
 }
+#blackBackDrop{
+  position: absolute;
+  opacity: .80;
+  height: 1000px;
+  /*display: none;*/
+  width: 110%;
+  top: -1%;
+  left: -1%;
+  right: 0
+  bottom: 0;
+  background-color: black;
+  z-index: 5;
+}
+#playAgain{
+  /*display: none;*/
+  position: absolute;
+  top: 12%;
+      left: 26%;
+      width: 37%;
+      height: 35%;
+  padding: 16px;
+  border: 50px solid green;
+  background-color: #A0DDE3;
+  z-index: 6;
+  overflow: auto;
+  color: black;
+  border radius: 5px;
+  font-family: 'Bungee', cursive;
+}
+#playAgain p{
+  display: block;
+  margin-top: 65px;
+  font-size: 30px;
+  text-align: center;
+}
+
+#ready{
+  margin-top: 20px;
+  font-size: 20px;
+  background-color: grey;
+  display: block;
+  width: 100px;
+  margin: 0 auto;
+  font-family: 'Bungee', cursive;
+  border: 3px solid green;
+  cursor: pointer;
+  border-radius: 2px;
+}
+#contact{
+  display: none;
+  position: absolute;
+  top: 12%;
+      left: 26%;
+      width: 37%;
+      height: 35%;
+  padding: 16px;
+  border: 50px solid green;
+  background-color: #A0DDE3;
+  z-index: 6;
+  overflow: auto;
+  color: black;
+  border radius: 5px;
+  font-family: 'Bungee', cursive;
+}
+#contact p{
+  display: block;
+  margin-top: 15px;
+  font-size: 24px;
+  text-align: center;
+}
+
+#restart{
+  margin-top: 20px;
+  font-size: 16px;
+  background-color: grey;
+  display: block;
+  width: 120px;
+  margin: 0 auto;
+  font-family: 'Bungee', cursive;
+  border: 3px solid green;
+  cursor: pointer;
+  border-radius: 2px;
+}
+.contact{
+  display: block;
+  position: absolute;
+  margin-left: -26%;
+  margin-top: -18%;
+}
 .btn{
   display: block;
   width: 100px;

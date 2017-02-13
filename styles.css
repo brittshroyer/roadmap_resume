@@ -95,6 +95,10 @@ body {
   font-size: 24px;
   text-align: center;
 }
+a{
+  color: black;
+  text-decoration: none;
+}
 
 #restart{
   margin-top: 10px;

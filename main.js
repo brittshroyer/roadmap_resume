@@ -17,6 +17,20 @@ $('#restart').mouseout(function(){
   $(this).css('background-color', 'grey');
 });
 
+$('.sendButton').mouseover(function(){
+  $(this).css('background-color', '#509CF0');
+});
+$('.sendButton').mouseout(function(){
+  $(this).css('background-color', 'grey');
+});
+
+$('#resume').mouseover(function(){
+  $(this).css('background-color', '#509CF0');
+});
+$('#resume').mouseout(function(){
+  $(this).css('background-color', 'grey');
+});
+
 $('#restart').on('click', function(){
   location.reload();
 });
@@ -235,7 +249,7 @@ $('#restart').on('click', function(){
     setTimeout(function(){
       $('#blackBackDrop').fadeIn('slow');
       $('#contact').fadeIn('slow');
-    }, 10000);
+    }, 8000);
   }else{
     $('.bootstrap').removeClass('rise1');
     $('.chrome').removeClass('rise2');

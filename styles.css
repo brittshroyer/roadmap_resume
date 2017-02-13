@@ -13,7 +13,7 @@ body {
 #blackBackDrop{
   position: absolute;
   opacity: .80;
-  height: 1000px;
+  height: 200%;
   /*display: none;*/
   width: 110%;
   top: -1%;
@@ -481,6 +481,7 @@ left: 51%;
   left: 50%;
   border: 6px solid yellow;
 }
+
 .state {
   position: relative;
   margin: auto;

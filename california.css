@@ -39,7 +39,7 @@
   top: 306px;
   display: none;
   border: 2px solid grey;
-  background: -webkit-radial-gradient(50% bottom,black, #808080);
+  background: -webkit-radial-gradient(50% bottom,black, #2F4F4F);
 }
 .caveHole{
   position: relative;

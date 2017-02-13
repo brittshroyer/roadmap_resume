@@ -20,29 +20,29 @@
 }
 @keyframes b1{
   from{top: 375px;}
-  to{top: 175px;  }
+  to{top: -2%;  }
 }
 @keyframes b2{
   from{top: 375px;}
-  to{top: 120px; }
+  to{top: -3%; }
 }
 @keyframes b3{
   from{top: 375px;}
-  to{top: 200px;  }
+  to{top: 0;  }
 }
 @keyframes b4{
   from{top: 375px;}
-  to{top: 155px;  }
+  to{top: -4%;  }
 }
 @keyframes b5{
   from{top: 375px;}
-  to{top: 60px;  }
+  to{top: 7%;  }
 }
 @keyframes b6{
   from{top: 375px;}
-  to{top: 100px;  }
+  to{top: -4%;  }
 }
 @keyframes b7{
   from{top: 375px;}
-  to{top: 125px;  }
+  to{top: 0;  }
 }

@@ -1,0 +1,35 @@
+@media only screen and (max-device-width:480px){
+  .states{
+    top: -90%;
+  }
+  #playAgain{
+    top: 50%;
+  }
+  .degree{
+    right: 1%;
+  }
+  .planeBody{
+  left: 7%;
+  }
+
+}
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+  .states{
+    top: -98%;
+  }
+  .planeBody{
+  left: 7%;
+  }
+}
+@media only screen and (min-device-width : 1024px){
+  .states{
+    top: -95%;
+  }
+  #playAgain{
+    top: 30%;
+    left: 28%;
+  }
+  .planeBody{
+  left: 7%;
+  }
+}

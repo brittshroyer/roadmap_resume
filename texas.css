@@ -240,12 +240,12 @@ left: 25%;
 .building{
   background: grey;
   width: 30px;
-  height: 250px;
+  height: 550px;
   position: absolute;
   top: 650px;
 }
 .bootstrap{
-  left: 75px;
+  left: 5%;
   width: 45px;
   background-image: url('./images/aus1.png');
   background-position: center;
@@ -254,7 +254,7 @@ left: 25%;
   background-color: rgba(0,0,0,0);
 }
 .chrome{
-  left: 250px;
+  left: 18%;
   width: 35px;
   background-image: url('./images/aus3.png');
   background-position: center;
@@ -263,7 +263,7 @@ left: 25%;
   background-color: rgba(0,0,0,0);
 }
 .react{
-  left: 400px;
+  left: 27%;
   width: 60px;
   background-image: url('./images/aus4.png');
   background-position: center;
@@ -272,7 +272,7 @@ left: 25%;
   background-color: rgba(0,0,0,0);
 }
 .js{
-  left: 865px;
+  left: 67%;
   width: 45px;
   background-image: url('./images/aus5.png');
   background-position: center;
@@ -281,11 +281,11 @@ left: 25%;
   background-color: rgba(0,0,0,0);
 }
 .htmlCss{
-  left: 1050px;
+  left: 75%;
   width: 55px;
 }
 .git{
-  left: 1210px;
+  left: 85%;
   width: 60px;
   background-image: url('./images/aus6.png');
   background-position: center;
@@ -294,7 +294,7 @@ left: 25%;
   background-color: rgba(0,0,0,0);
 }
 .node{
-  left: 1350px;
+  left: 94%;
   width: 50px;
   background-image: url('./images/aus7.png');
   background-position: center;
@@ -304,31 +304,31 @@ left: 25%;
 }
 .rise1{
   animation: b1 2.5s;
-  top: 175px;
+  top: -2%;
 }
 .rise2{
   animation: b2 3s;
-  top: 120px;
+  top: -3%;
 }
 .rise3{
   animation: b3 2s;
-  top: 200px;
+  top: 0;
 }
 .rise4{
   animation: b4 3.5s;
-  top: 155px;
+  top: -4%;
 }
 .rise5{
   animation: b5 2.5s;
-  top: 60px;
+  top: 7%;
 }
 .rise6{
   animation: b6 2s;
-  top: 100px;
+  top: -4%;
 }
 .rise7{
   animation: b7 2.5s;
-  top: 125px;
+  top: 0;
 }
 .header{
   position: absolute;

@@ -232,10 +232,10 @@ $('#restart').on('click', function(){
     setTimeout(function(){
       $('.header').fadeIn('slow');
     },3500);
-    setTimeout(function(){
-      $('#blackBackDrop').fadeIn('slow');
-      $('#contact').fadeIn('slow');
-    }, 8000);
+    // setTimeout(function(){
+    //   $('#blackBackDrop').fadeIn('slow');
+    //   $('#contact').fadeIn('slow');
+    // }, 8000);
   }else{
     $('.bootstrap').removeClass('rise1');
     $('.chrome').removeClass('rise2');

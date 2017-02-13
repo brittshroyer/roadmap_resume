@@ -2,16 +2,24 @@
   .states{
     top: -90%;
   }
-  #playAgain{
+  #playAgain, #contact{
     top: 50%;
   }
+  #contact{
+    left: 14%;
+  width: 59%;
+  }
+
   .degree{
     right: 1%;
   }
   .planeBody{
   left: 7%;
   }
-
+  .leftPull{
+    transform: rotate(17deg);
+    height: 475px;
+  }
 }
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
   .states{
@@ -20,16 +28,57 @@
   .planeBody{
   left: 7%;
   }
+  .leftPull{
+    transform: rotate(17deg);
+    height: 475px;
+  }
+  #contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 14%;
+  width: 58%;
+  }
 }
-@media only screen and (min-device-width : 1024px){
+@media screen and(min-width: 1000px){
+  #contact{
+    top: 22%;
+left: 19%;
+right: 16%;
+width: 36%;
+height: 30%
+  }
+}
+
+/*@media only screen and (min-device-width : 1024px){
   .states{
     top: -95%;
   }
-  #playAgain{
+  .leftPull{
+    transform: rotate(17deg);
+    height: 475px;
+  }
+  #playAgain, #contact{
     top: 30%;
     left: 28%;
+  }
+  #contact{
+    left: 14%;
+  width: 59%;
+  }
+  #restart{
+    margin-top: 15px;
+    font-size: 18px;
+    background-color: grey;
+    display: block;
+    width: 150px;
+    margin: 0 auto;
+    font-family: 'Bungee', cursive;
+    border: 3px solid green;
+    cursor: pointer;
+    border-radius: 2px;
   }
   .planeBody{
   left: 7%;
   }
-}
+}*/

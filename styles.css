@@ -10,6 +10,18 @@ body {
   overflow: hidden;
   transition: background 8s linear;
 }
+.sendButton{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  background-color: grey;
+  display: inline-block;
+  width: 120px;
+  font-family: 'Bungee', cursive;
+  border: 3px solid green;
+  cursor: pointer;
+  border-radius: 2px;
+}
 #blackBackDrop{
   position: absolute;
   opacity: .80;
@@ -61,7 +73,7 @@ body {
 #contact{
   display: none;
   position: absolute;
-  top: 12%;
+  top: 28%;
       left: 26%;
       width: 37%;
       height: 35%;
@@ -74,6 +86,9 @@ body {
   border radius: 5px;
   font-family: 'Bungee', cursive;
 }
+.messageForm{
+  width: 80%;
+}
 #contact p{
   display: block;
   margin-top: 15px;
@@ -82,12 +97,23 @@ body {
 }
 
 #restart{
-  margin-top: 20px;
+  margin-top: 10px;
   font-size: 16px;
   background-color: grey;
-  display: block;
+  display: inline-block;
   width: 120px;
   margin: 0 auto;
+  font-family: 'Bungee', cursive;
+  border: 3px solid green;
+  cursor: pointer;
+  border-radius: 2px;
+}
+#resume{
+  margin-left: 10px;
+  font-size: 16px;
+  background-color: grey;
+  display: inline-block;
+  width: 120px;
   font-family: 'Bungee', cursive;
   border: 3px solid green;
   cursor: pointer;

@@ -8,7 +8,7 @@ $('#ready').mouseout(function(){
 });
 $('#ready').on('click', function(){
   $('#playAgain').css('display', 'none');
-  $('.gameover').fadeOut(3000);
+  $('.gameover').fadeOut(2000);
 });
 $('#restart').mouseover(function(){
   $(this).css('background-color', '#509CF0');
@@ -232,10 +232,10 @@ $('#restart').on('click', function(){
     setTimeout(function(){
       $('.header').fadeIn('slow');
     },3500);
-    // setTimeout(function(){
-    //   $('#blackBackDrop').fadeIn('slow');
-    //   $('#contact').fadeIn('slow');
-    // }, 8000);
+    setTimeout(function(){
+      $('#blackBackDrop').fadeIn('slow');
+      $('#contact').fadeIn('slow');
+    }, 10000);
   }else{
     $('.bootstrap').removeClass('rise1');
     $('.chrome').removeClass('rise2');
@@ -246,16 +246,11 @@ $('#restart').on('click', function(){
     $('.node').removeClass('rise7');
     $('.header').css('display', 'none');
   }
+}
 
-      // $('.cave').fadeIn();
-      // $('.caveHole').fadeIn();
-      // $('.caliWelcome').fadeIn();
-
-  }
-
-  $('.states').scroll(function(){
-    calcMileage();
-  });
+$('.states').scroll(function(){
+  calcMileage();
+});
 
   // #343538
 

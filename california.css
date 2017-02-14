@@ -85,7 +85,7 @@
   height: 58px;
   border-radius: 30% 50% 10% 50%;
   top: 8%;
-  left: 5%;
+  left: 7.35%;
   border-left: 3px solid black;
   box-shadow: 2px 2px 2px grey;
   border-bottom: 3px solid white;
@@ -95,7 +95,7 @@
       height: 50px;
       border-radius: 50% 50% 0 0;
       top: -28px;
-      left: 151px;
+      left: 16%;
       transform: rotate(-26deg);
       border-top: 1px solid black;
       position: absolute;
@@ -107,14 +107,14 @@
       height: 80px;
       border-radius: 0% 0% 50% 50%;
       top: 20px;
-      left: 176px;
+      left: 18%;
       transform: rotate(-17deg);
 }
 .planeTail{
   width: 45px;
   height: 67px;
   top: -28px;
-  left: 256px;
+  left: 26.7%;
   border-top: 1px solid black;
   border-radius: 16% 16% 0 0;
 }
@@ -123,21 +123,29 @@
   height: 37px;
     border-radius: 40% 40% 50% 50%;
     background: black;
+    left: -0.5%;
 }
 .topProp{
-  top: -3px;
-      left: 66px;
+  top: 42px;
+
       height: 29px;
 }
 .bottomProp{
-  top: 31px;
-  left: 66px;
+  top: 71px;
+
 
 }
 .plane{
   position: relative;
-  left: 100%;
-  top: -33%;
+  width: 1000px;
+  height: 1000px;
+  left: 105%;
+  top: -38%;
+  background-image: url(images/propPlane.png);
+  background-repeat: no-repeat;
+  background-size: 30%;
+  background-position-x: -7px;
+  background-position-y: 0px;
 }
 .fly{
   animation: fly 12s linear;
@@ -145,28 +153,28 @@
 .string{
   height: 1px;
   width: 46px;
-  top: 34px;
-  left: 300px;
+  top: 63px;
+  left: 28.5%;
 }
 .hook{
-  height: 69px;
+  height: 81px;
   width: 1px;
 }
 .topHook{
-  transform: rotate(-45deg);
-  top: 24px;
-  left: 368px
+  transform: rotate(-58deg);
+  top: 46px;
+  left: 36.5%;
 }
 .bottomHook{
-  transform: rotate(39deg);
-  top: -27px;
-  left: 367px;
+  transform: rotate(60deg);
+  top: 4px;
+  left: 36.5%
 }
 .banner{
   width: 400px;
   height: 104px;
-  left: 390px;
-  top: -20px;
+  left: 40%;
+  top: 15px;
   background: #FF6600;
   border-radius: 4px;
   box-shadow: 2px 3px 2px grey;

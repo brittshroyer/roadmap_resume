@@ -13,9 +13,9 @@
   .degree{
     right: 1%;
   }
-  .planeBody{
+  /*.planeBody{
   left: 7%;
-  }
+  }*/
   .leftPull{
     transform: rotate(17deg);
     height: 475px;
@@ -25,9 +25,9 @@
   .states{
     top: -98%;
   }
-  .planeBody{
+  /*.planeBody{
   left: 7%;
-  }
+  }*/
   .leftPull{
     transform: rotate(17deg);
     height: 475px;

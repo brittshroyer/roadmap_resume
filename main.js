@@ -1,3 +1,4 @@
+
 $(document).ready(function() {
 //scroll to start of drive
 $('#ready').mouseover(function(){
@@ -45,11 +46,13 @@ $('#restart').on('click', function(){
     if(e.which == 38){
       console.log('keypress working!');
       $(".states").animate({
-              scrollTop:  '-=250'
+              scrollTop:  '-=50',
+              behavior: 'smooth'
          });
     }else if(e.which == 40){
       $('.states').animate({
-          scrollTop: '+=250'
+          scrollTop: '+=50',
+          behavior: 'smooth'
       });
     }
   });

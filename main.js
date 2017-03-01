@@ -60,22 +60,24 @@ $('#restart').on('click', function(){
   });
 
   var drive = function(){
-    var
     var distanceRemaining = $('.states').scrollTop();
     var distanceTraveled = initialDistance - distanceRemaining;
     console.log('distance traveled:',distanceTraveled);
     // translate ohio sign
     $('.ohioWelcome').css('transform', 'translateZ('+distanceTraveled/6+'px)');
     $('.post').css('height', 10+distanceTraveled/16+'px');
+    //i90 sign & clouds
     if(distanceTraveled>1500){
       var i90Distance = distanceTraveled - 1500;
       $('.i90').css('transform', 'translateZ('+i90Distance/6+'px)');
       $('.cloudBody').css('margin-left', -1100 + i90Distance/3 + 'px');
       $('.cloud2').css('margin-left', 1000 - i90Distance/5 + 'px');
     }
+    //beta house
     if(distanceTraveled > 1900 && distanceTraveled < 5800){
       $('.bellTower').css('margin-top', 30 - distanceTraveled/220 +'%');
     }
+    //colgate exit sign
     if(distanceTraveled>2000){
       var colgateDistance = distanceTraveled - 2000;
       $('.colgate').css('transform', 'translateZ('+colgateDistance/12+'px)');
@@ -83,7 +85,6 @@ $('#restart').on('click', function(){
     if(distanceTraveled>3250){
       var stoplightDistance = distanceTraveled - 3300;
       $('.anchor').css('transform', 'translateZ('+ (stoplightDistance/6)+'px)');
-      // $('.anchor').css('top', 36+'%)');
     }
     if(distanceTraveled > 6500 && distanceTraveled < 7800 ){
       var diploma = distanceTraveled - 5500;

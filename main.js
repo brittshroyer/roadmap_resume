@@ -1,6 +1,7 @@
 
 $(document).ready(function() {
-//scroll to start of drive
+
+//initial ready box
 $('#ready').mouseover(function(){
   $(this).css('background-color', '#509CF0');
 });
@@ -11,37 +12,38 @@ $('#ready').on('click', function(){
   $('#playAgain').css('display', 'none');
   $('.gameover').fadeOut(2000);
 });
+
+//restart box
 $('#restart').mouseover(function(){
   $(this).css('background-color', '#509CF0');
 });
 $('#restart').mouseout(function(){
   $(this).css('background-color', 'grey');
 });
-
 $('.sendButton').mouseover(function(){
   $(this).css('background-color', '#509CF0');
 });
 $('.sendButton').mouseout(function(){
   $(this).css('background-color', 'grey');
 });
-
 $('#resume').mouseover(function(){
   $(this).css('background-color', '#509CF0');
 });
 $('#resume').mouseout(function(){
   $(this).css('background-color', 'grey');
 });
-
 $('#restart').on('click', function(){
   location.reload();
 });
 
+//on page load, scroll to bottom of the road
   $('.states').scrollTop($('.states')[0].scrollHeight);
   console.log($('.states')[0].scrollHeight);
 
-
+//store total height of road div to later calculate distance traveled
   var initialDistance = $('.states').scrollTop();
 
+//drive using key press up and down arrows
   $(document).keydown(function(e){
     if(e.which == 38){
       console.log('keypress working!');
@@ -57,7 +59,8 @@ $('#restart').on('click', function(){
     }
   });
 
-  var calcMileage = function(){
+  var drive = function(){
+    var
     var distanceRemaining = $('.states').scrollTop();
     var distanceTraveled = initialDistance - distanceRemaining;
     console.log('distance traveled:',distanceTraveled);
@@ -211,14 +214,8 @@ $('#restart').on('click', function(){
       $('.hill').removeClass('hillRoll');
     }
     if(distanceTraveled > 22400){
-      // var hillDistance = distanceTraveled - 21100;
-      // $('.hill1').css('transform', 'translateX(-' + hillDistance/6 + 'px)');
-      // $('.hill2').css('transform', 'translateX(' + hillDistance/6 + 'px)');
       $('.hill1').addClass('leftPull');
       $('.hill2').addClass('rightPull');
-    // }else{
-    //   $('.hill1').css('transform', 'none');
-    //   $('.hill2').css('transform', 'none');
   }else{
     $('.hill1').removeClass('leftPull');
     $('.hill2').removeClass('rightPull');
@@ -266,10 +263,9 @@ $('#restart').on('click', function(){
 }
 
 $('.states').scroll(function(){
-  calcMileage();
+  drive();
 });
 
-  // #343538
 
 
 

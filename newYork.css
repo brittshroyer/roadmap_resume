@@ -74,7 +74,7 @@
   top: 40.5%;
   left: 46.5%;
   border-top: 2px solid black;
-  border-right: 8px solid grey;
+  border-right: 8px solid #444;
 }
 .exit p{
   bottom: 38%;
@@ -82,7 +82,7 @@
   color: white;
 }
 .gate{
-background-color: green;
+background-color: #580d13;
 height: 47px;
 color: white;
 position: relative;
@@ -94,7 +94,7 @@ border: 2px solid white;
 text-shadow: 1px solid black;
 }
 .gate p{
-  font-size: 12px;
+  font-size: 8px;
 }
 
 /*diploma*/
@@ -104,8 +104,8 @@ text-shadow: 1px solid black;
   height: 250px;
   background-color: #fdf5e8;
   position: absolute;
-  right: 5%;
-  top: 221px;
+  right: 2%;
+  top: 175px;
   font-family: 'Playball', cursive;
   box-shadow: 3px 3px 1px #888888;
   display: none;

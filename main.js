@@ -11,6 +11,8 @@ $('#ready').mouseout(function(){
 $('#ready').on('click', function(){
   $('#playAgain').css('display', 'none');
   $('.gameover').fadeOut(2000);
+  $('.gameover').css('position', 'relative');
+  $('.gameover').css('position', 'relative');
 });
 
 //restart box
@@ -65,7 +67,7 @@ $('#restart').on('click', function(){
     console.log('distance traveled:',distanceTraveled);
     // translate ohio sign
     $('.ohioWelcome').css('transform', 'translateZ('+distanceTraveled/6+'px)');
-    $('.post').css('height', 10+distanceTraveled/16+'px');
+    $('.post').css('height', 20+distanceTraveled/16+'px');
     //i90 sign & clouds
     if(distanceTraveled>1500){
       var i90Distance = distanceTraveled - 1500;
@@ -131,7 +133,7 @@ $('#restart').on('click', function(){
       $('.cactusPart').css('transform', 'translateX('+ sunDistance/10 + 'px)');
     }
     if(distanceTraveled > 12500){
-      $('.sky').css('opacity', .65);
+      $('.sky').css('opacity', .75);
       $('.sun').css('background','red');
     }else{
       $('.sky').css('opacity', 0);
@@ -191,6 +193,9 @@ $('#restart').on('click', function(){
     }
     if(distanceTraveled > 20250){
       var planeDistance = distanceTraveled - 20250;
+      $('.sky').css('opacity', 1);
+      $('.desertSky').css('opacity', 0);
+      $('.caliSky').css('opacity', 1);
       $('.plane').addClass('fly');
       $('.hill').css('background', '#78AB46');
       $('.hill').css('border', 2 + 'px solid green');

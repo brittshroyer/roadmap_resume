@@ -206,6 +206,13 @@ a{
   width: 100%;
   height: 100%;
 }
+.caliSky{
+  background: linear-gradient(to bottom right, #a7d3cb, #e5cab3, #fdecd0);
+  transition: background 2s linear;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
 .car{
   position: absolute;
   width: inherit;
@@ -389,21 +396,7 @@ left: 51%;
 .i40{
 
 }
-.post{
-  height: 100px;
-  width: 5px;
-  background-color: silver;
-  top: 377px;
-  position: absolute;
-  margin: 0 auto;
-  border: 1px solid grey;
-}
-.lpost{
-  margin-left: 7%
-}
-.rpost{
-  margin-left: 91.5%;
-}
+
 .ground{
   height: 500px;
   width: 110%;
@@ -416,24 +409,36 @@ left: 51%;
     /*border-top: 2px solid #1AA126;*/
 }
 .ohioWelcome{
-  position: relative;
-  width: 200px;
-  margin: 0 auto;
-
+  position: absolute;
+  height: 400px;
+  width: 250px;
+  left: 50%;
+  margin-left: -105px;
+  top: 27%;
 }
 .ohioSign{
   height: 100px;
   width: 200px;
   background-color: #003366;
-  position: relative;
-  top: 270px;
+  top: 0;
   display: flex;
   align-items: center;
   flex-direction: column;
-  justify-content:space-around;
+  justify-content: space-around;
   border: 4px solid white;
   border-radius: 3px;
-  left: -1%;
+}
+.post{
+  height: 100px;
+  width: 5px;
+  background-color: silver;
+  top: 107px;
+  position: absolute;
+  border: 1px solid grey;
+  border-top: 1px solid white;
+}
+.rpost{
+  margin-left: 80.5%;
 }
 .ohioSign h3{
   font-family: 'Roboto', sans-serif;
@@ -448,7 +453,6 @@ left: 51%;
   font-size: 34px;
   font-family: 'Dancing Script', cursive;
   margin-bottom: 15px;
-
 }
 
 

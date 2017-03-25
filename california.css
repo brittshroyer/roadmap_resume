@@ -175,7 +175,7 @@
   height: 104px;
   left: 40%;
   top: 15px;
-  background: #FF6600;
+  background: #d15b0c;
   border-radius: 4px;
   box-shadow: 2px 3px 2px grey;
 }
@@ -189,8 +189,9 @@
       font-family: 'Racing Sans One', cursive;
 }
 .banner h3{
-  color: #004772;
+  color: dodgerblue;
   display: inline-block;
+  text-shadow: 1px 1px 1px black;
   /* text-align: center; */
   margin-top: 11px;
   font-size: 23px;
@@ -202,7 +203,8 @@
 }
 .banner p{
   font-size: 19px;
-  color: #004772;
+  color: dodgerblue;
+  text-shadow: 1px 1px 1px black;
   display: inline-block;
   position: relative;
   left: 122px;

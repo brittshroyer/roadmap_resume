@@ -14,6 +14,12 @@ $('#ready').on('click', function(){
   $('.gameover').css('position', 'relative');
   $('.gameover').css('position', 'relative');
 });
+$('.call').on('mouseover', function(){
+  $('#contact').css('visibility', 'visible');
+});
+$('.call').on('mouseout', function(){
+  $('#contact').css('visibility', 'hidden');
+});
 
 //restart box
 $('#restart').mouseover(function(){
@@ -246,13 +252,17 @@ $('#restart').on('click', function(){
     $('.htmlCss').addClass('rise5');
     $('.git').addClass('rise6');
     $('.node').addClass('rise7');
+    $('.endSign').animate({
+      opacity: 1
+    },5500);
+    $('.fa').animate({
+      opacity: 1
+    },5500);
     setTimeout(function(){
       $('.header').fadeIn('slow');
-    },3500);
+    },2500);
     // setTimeout(function(){
-    //   $('#blackBackDrop').fadeIn('slow');
-    //   $('#contact').fadeIn('slow');
-    // }, 8000);
+    //   $('#blackBackDrop').fadeIn('slow')
   }else{
     $('.bootstrap').removeClass('rise1');
     $('.chrome').removeClass('rise2');
@@ -262,6 +272,8 @@ $('#restart').on('click', function(){
     $('.git').removeClass('rise6');
     $('.node').removeClass('rise7');
     $('.header').css('display', 'none');
+    $('.endSign').css('opacity', 0);
+    $('.fa').css('opacity', 0);
   }
 }
 

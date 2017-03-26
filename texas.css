@@ -238,7 +238,7 @@ left: 25%;
 }
 
 .building{
-  background: grey;
+  background: #6c6969;
   width: 30px;
   height: 550px;
   position: absolute;
@@ -283,6 +283,7 @@ left: 25%;
 .htmlCss{
   left: 75%;
   width: 55px;
+
 }
 .git{
   left: 85%;

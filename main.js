@@ -133,7 +133,7 @@ $('#restart').on('click', function(){
       $('.cactusPart').css('transform', 'translateX('+ sunDistance/10 + 'px)');
     }
     if(distanceTraveled > 12500){
-      $('.sky').css('opacity', .75);
+      $('.sky').css('opacity', .70);
       $('.sun').css('background','red');
     }else{
       $('.sky').css('opacity', 0);
@@ -199,6 +199,7 @@ $('#restart').on('click', function(){
       $('.plane').addClass('fly');
       $('.hill').css('background', '#78AB46');
       $('.hill').css('border', 2 + 'px solid green');
+      $('.ground').css('background', '#78AB46');
       var propeller = setInterval(function(){
         $('.prop').toggleClass('soar');
       }, 10);
@@ -207,10 +208,6 @@ $('#restart').on('click', function(){
       }, 11000);    // setTimeout(soaring, 12000);
     }else{
       $('.plane').removeClass('fly');
-    }
-    if(distanceTraveled > 20900){
-      $('.ground').css('background', '#78AB46');
-      // $('.hill').css('border', 2 + 'px solid green');
     }
     if(distanceTraveled > 21500){
       $('.hill1').css('left', '-' + 18 + '%' );
@@ -252,10 +249,10 @@ $('#restart').on('click', function(){
     setTimeout(function(){
       $('.header').fadeIn('slow');
     },3500);
-    setTimeout(function(){
-      $('#blackBackDrop').fadeIn('slow');
-      $('#contact').fadeIn('slow');
-    }, 8000);
+    // setTimeout(function(){
+    //   $('#blackBackDrop').fadeIn('slow');
+    //   $('#contact').fadeIn('slow');
+    // }, 8000);
   }else{
     $('.bootstrap').removeClass('rise1');
     $('.chrome').removeClass('rise2');

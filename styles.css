@@ -76,7 +76,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  top: 40%;
+  top: 34%;
   left: 32%;
   width: 29%;
   height: 12%;
@@ -96,7 +96,7 @@ body {
 #contact p{
   display: block;
   margin-top: 15px;
-  font-size: 24px;
+  font-size: 20px;
   text-align: center;
 }
 

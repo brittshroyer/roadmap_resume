@@ -670,13 +670,13 @@ left: 51%;
   background: #2f1804;
 }
 .project-modal{
-  height: 600px;
+  height: 500px;
   width: 800px;
   border: 50px solid tomato;
   background: #444;
   position: absolute;
-  bottom: 34%;
-  left: 20.5%;
+  bottom: 39%;
+  left: 10%;
   z-index: 10;
   display: flex;
   flex-direction: column;
@@ -685,7 +685,7 @@ left: 51%;
   visibility: hidden;
 }
 .project-child{
-  height: 250px;
+  height: 200px;
   width: 650px;
   background: black;
   display: flex;
@@ -693,7 +693,7 @@ left: 51%;
   align-items: center;
 }
 .project-profile{
-  height: 250px;
+  height: 200px;
   width: 300px;
   background: blue;
   display: flex;
@@ -721,14 +721,14 @@ left: 51%;
   align-items: center;
 }
 .project-blurb{
-  height: 250px;
+  height: 200px;
   width: 350px;
   background: lavender;
   display: flex;
   flex-direction: column;
 }
 .project-description{
-  height: 200px;
+  height: 150px;
   width: 350px;
   background: yellow;
   display: flex;

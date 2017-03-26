@@ -669,3 +669,114 @@ left: 51%;
   height: 15px;
   background: #2f1804;
 }
+.project-modal{
+  height: 600px;
+  width: 800px;
+  border: 50px solid tomato;
+  background: #444;
+  position: absolute;
+  bottom: 34%;
+  left: 20.5%;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  visibility: hidden;
+}
+.project-child{
+  height: 250px;
+  width: 650px;
+  background: black;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.project-profile{
+  height: 250px;
+  width: 300px;
+  background: blue;
+  display: flex;
+  flex-direction: column;
+}
+.project-pic{
+  height: 200px;
+  width: 300px;
+  background: red;
+}
+.project1-pic{
+  background: url('./images/PeerPulse.png');
+  background-size: cover;
+}
+.project2-pic{
+  background: url('./images/Relief-RN.png');
+  background-size: cover;
+}
+.project-github{
+  height: 50px;
+  width: 300px;
+  background: green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.project-blurb{
+  height: 250px;
+  width: 350px;
+  background: lavender;
+  display: flex;
+  flex-direction: column;
+}
+.project-description{
+  height: 200px;
+  width: 350px;
+  background: yellow;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.project-site-link{
+  height: 50px;
+  width: 350px;
+  background: purple;
+}
+.project-modal h3{
+  font-family: 'Inconsolata', monospace;
+  font-size: 22px;
+  text-decoration: underline;
+}
+.project-modal p{
+  font-family: 'Inconsolata', monospace;
+  font-size: 18px;
+  margin: 10px;
+  text-align: center;
+}
+.project-modal h4{
+  font-family: 'Inconsolata', monospace;
+  font-size: 22px;
+  text-decoration: underline;
+}
+.project-site-link{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.project-dim-cover{
+  position: absolute;
+  z-index: 5;
+  width: 110%;
+  height: 110%;
+  top: -1%;
+  left: -1%;
+  background: black;
+  opacity: .75;
+  display: none;
+}
+.project-modal h2{
+  display: inline-block;
+  text-align: center;
+  margin-bottom: -56px;
+  font-family: 'Inconsolata', monospace;
+  font-size: 28px;
+  cursor: pointer;
+}

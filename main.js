@@ -10,15 +10,21 @@ $('#ready').mouseout(function(){
 });
 $('#ready').on('click', function(){
   $('#playAgain').css('display', 'none');
-  $('.gameover').fadeOut(2000);
-  $('.gameover').css('position', 'relative');
-  $('.gameover').css('position', 'relative');
+  $('.gameover').fadeOut(1000);
 });
 $('.call').on('mouseover', function(){
   $('#contact').css('visibility', 'visible');
 });
 $('.call').on('mouseout', function(){
   $('#contact').css('visibility', 'hidden');
+});
+$('.portfolioSign').on('click', function(){
+  $('.project-modal').css('visibility', 'visible');
+  $('.project-dim-cover').fadeIn(1500);
+});
+$('.modal-exit').on('click', function(){
+  $('.project-modal').css('visibility', 'hidden');
+  $('.project-dim-cover').css('display', 'none');
 });
 
 //restart box

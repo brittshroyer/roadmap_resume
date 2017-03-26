@@ -652,13 +652,20 @@ left: 51%;
 .endSign p{
   text-align: center;
   font-family: 'Caveat', cursive;
-  font-size: 28px;
+  font-size: 32px;
 }
 .fa{
   opacity: 0;
   cursor: pointer;
   background-image: url('./images/concrete_wall.png');
 }
-#email{
-  display: none;
+.cv-top{
+  width: 12px;
+  height: 15px;
+  background: #2f1804;
+}
+.portfolio-top{
+  width: 12px;
+  height: 15px;
+  background: #2f1804;
 }

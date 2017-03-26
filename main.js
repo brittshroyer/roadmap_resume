@@ -261,8 +261,8 @@ $('#restart').on('click', function(){
     setTimeout(function(){
       $('.header').fadeIn('slow');
     },2500);
-    // setTimeout(function(){
-    //   $('#blackBackDrop').fadeIn('slow')
+    //prevent scrolling
+    $('.states').css('overflow', 'hidden');
   }else{
     $('.bootstrap').removeClass('rise1');
     $('.chrome').removeClass('rise2');
@@ -272,8 +272,6 @@ $('#restart').on('click', function(){
     $('.git').removeClass('rise6');
     $('.node').removeClass('rise7');
     $('.header').css('display', 'none');
-    $('.endSign').css('opacity', 0);
-    $('.fa').css('opacity', 0);
   }
 }
 

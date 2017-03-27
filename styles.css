@@ -86,7 +86,7 @@ body {
   z-index: 6;
   overflow: auto;
   color: black;
-  font-family: 'Bungee', cursive;
+  font-family: 'Inconsolata', monospace;
   visibility: hidden;
 }
 
@@ -706,11 +706,11 @@ left: 51%;
 }
 .project1-pic{
   background: url('./images/PeerPulse.png');
-  background-size: cover;
+  background-size: 101% 153%;
 }
 .project2-pic{
   background: url('./images/Relief-RN.png');
-  background-size: cover;
+  background-size: 100% 105%;
 }
 .project-github{
   height: 50px;
@@ -728,7 +728,7 @@ left: 51%;
   flex-direction: column;
 }
 .project-description{
-  height: 150px;
+  height: 200px;
   width: 350px;
   background: yellow;
   display: flex;

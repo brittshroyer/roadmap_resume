@@ -614,7 +614,7 @@ left: 51%;
   opacity: 0;
 }
 .cv{
-  right: 10%;
+  right: 6%;
   transform: rotateY(-54deg) rotate(15deg);
 }
 .cvSign{
@@ -632,7 +632,7 @@ left: 51%;
   background: #2f1804;
 }
 .portfolio{
-  left: 10%;
+  left: 6%;
   transform: rotateY(54deg) rotate(-15deg);
 }
 .portfolioSign{

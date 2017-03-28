@@ -688,8 +688,8 @@ a{
   background: #2f1804;
 }
 .project-modal{
-  height: 500px;
-  width: 800px;
+  height: 600px;
+  width: 900px;
   border: 50px solid tomato;
   background: #444;
   position: absolute;

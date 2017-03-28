@@ -213,6 +213,7 @@ $('#restart').on('click', function(){
       $('.plane').addClass('fly');
       $('.hill').css('background', '#78AB46');
       $('.hill').css('border', 2 + 'px solid green');
+      $('.hill2').css('border', 'none');
       $('.ground').css('background', '#78AB46');
       var propeller = setInterval(function(){
         $('.prop').toggleClass('soar');
@@ -226,7 +227,6 @@ $('#restart').on('click', function(){
     if(distanceTraveled > 21500){
       $('.hill1').css('left', '-' + 18 + '%' );
       $('.hill').addClass('hillRoll');
-      $('.hill2').css('border', 'none');
     }else{
       $('.hill1').css('left', 0);
       $('.hill').removeClass('hillRoll');

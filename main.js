@@ -13,18 +13,20 @@ $('#ready').on('click', function(){
   $('.gameover').fadeOut(1000);
 });
 $('.call').on('mouseover', function(){
+  $('.screenWrap').css('visibility', 'visibile');
   $('#contact').css('visibility', 'visible');
 });
 $('.call').on('mouseout', function(){
   $('#contact').css('visibility', 'hidden');
+  $('.screenWrap').css('visibility', 'hidden');
 });
 $('.portfolioSign').on('click', function(){
+  $('.project-dim-cover').css('visibility', 'visible');
   $('.project-modal').css('visibility', 'visible');
-  $('.project-dim-cover').fadeIn(1500);
 });
 $('.modal-exit').on('click', function(){
+  $('.project-dim-cover').css('visibility', 'hidden');
   $('.project-modal').css('visibility', 'hidden');
-  $('.project-dim-cover').css('display', 'none');
 });
 
 //restart box
@@ -260,10 +262,11 @@ $('#restart').on('click', function(){
     $('.node').addClass('rise7');
     $('.endSign').animate({
       opacity: 1
-    },5500);
+    },3500);
+    $('.footer').css('visibility','visible');
     $('.fa').animate({
       opacity: 1
-    },5500);
+    },3500);
     setTimeout(function(){
       $('.header').fadeIn('slow');
     },2500);
@@ -280,25 +283,7 @@ $('#restart').on('click', function(){
     $('.header').css('display', 'none');
   }
 }
-
-$('.states').scroll(function(){
-  drive();
-});
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  $('.states').scroll(function(){
+    drive();
+  });
 });

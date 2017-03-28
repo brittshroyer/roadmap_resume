@@ -25,8 +25,8 @@
   letter-spacing: 1px;
 }
 .i40post{
-  height: 80px;
-  top: 93%;
+  height: 200px;
+  top: 92%;
   width: 3px;
   background-color: silver;
   position: absolute;
@@ -132,7 +132,7 @@
 }
 .qlPost{
   width: 10px;
-  height: 290px;
+  height: 400px;
   background-color: black;
   position: absolute;
   top: 149px;

@@ -1,5 +1,5 @@
 .beach{
-  width: 600px;
+  width: 1000px;
   height: 400px;
   background: beige;
   position: absolute;
@@ -20,7 +20,7 @@
 .cliff{
   transform: rotate(-23deg);
   background: #654321;
-  height: 900px;
+  height: 1600px;
   width: 85%;
   position: absolute;
   top: 0%;

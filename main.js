@@ -226,6 +226,7 @@ $('#restart').on('click', function(){
     if(distanceTraveled > 21500){
       $('.hill1').css('left', '-' + 18 + '%' );
       $('.hill').addClass('hillRoll');
+      $('.hill2').css('border', 'none');
     }else{
       $('.hill1').css('left', 0);
       $('.hill').removeClass('hillRoll');

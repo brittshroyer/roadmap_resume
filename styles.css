@@ -24,25 +24,25 @@ body {
 }
 #blackBackDrop{
   position: absolute;
-  opacity: .80;
-  height: 200%;
-  /*display: none;*/
-  width: 110%;
+  height: 105vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 102%;
   top: -1%;
   left: -1%;
-  right: 0
-  bottom: 0;
-  background-color: black;
+  background-color: rgba(0,0,0, .75);
   z-index: 5;
 }
-#playAgain{
-  /*display: none;*/
+#startBox{
   position: absolute;
-  top: 12%;
-      left: 26%;
-      width: 37%;
-      height: 26%;
+  width: 37%;
+  height: 26%;
   padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   border: 50px solid #0547FF;
   background-color: #A0DDE3;
   z-index: 6;
@@ -51,7 +51,7 @@ body {
   border radius: 5px;
   font-family: 'Bungee', cursive;
 }
-#playAgain p{
+#startBox p{
   display: block;
   margin-top: 65px;
   font-size: 30px;

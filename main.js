@@ -9,7 +9,7 @@ $('#ready').mouseout(function(){
   $(this).css('background-color', 'grey');
 });
 $('#ready').on('click', function(){
-  $('#playAgain').css('display', 'none');
+  $('#startBox').css('display', 'none');
   $('.gameover').fadeOut(1000);
 });
 $('.call').on('mouseover', function(){
@@ -144,7 +144,7 @@ $('#restart').on('click', function(){
     if(distanceTraveled > 12000){
       var sunDistance = distanceTraveled - 12000;
       $('.sun').css('transform', 'translateX('+ sunDistance/4 + 'px) translateY('+ sunDistance/7 + 'px)');
-      $('.cactusPart').css('transform', 'translateX('+ sunDistance/10 + 'px)');
+      $('.cactusPart').css('transform', 'translateX('+ sunDistance/8 + 'px)');
     }
     if(distanceTraveled > 12500){
       $('.sky').css('opacity', .70);

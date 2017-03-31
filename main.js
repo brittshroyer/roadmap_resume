@@ -26,7 +26,7 @@ $('.portfolioSign').on('click', function(){
 });
 $('.modal-exit').on('click', function(){
   $('.project-dim-cover').css('visibility', 'hidden');
-  $('.project-modal').css('visibility', 'hidden');
+  $('.project-modal').css('visibility', 'hidden')
 });
 
 //restart box

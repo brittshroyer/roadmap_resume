@@ -31,13 +31,13 @@ body {
   width: 102%;
   top: -1%;
   left: -1%;
-  background-color: rgba(0,0,0, .75);
+  background-color: rgba(0,0,0, .95);
   z-index: 5;
 }
 #startBox{
   position: absolute;
-  width: 37%;
-  height: 26%;
+  width: 400px;
+  height: 260px;
   padding: 16px;
   display: flex;
   flex-direction: column;
@@ -699,6 +699,7 @@ a{
   justify-content: space-around;
   align-items: center;
   visibility: hidden;
+  overflow-y: scroll;
 }
 .project-child{
   height: 200px;
@@ -726,6 +727,10 @@ a{
 }
 .project2-pic{
   background: url('./images/Relief-RN.png');
+  background-size: 100% 105%;
+}
+.project3-pic{
+  background: url('./images/ember-hangman.png');
   background-size: 100% 105%;
 }
 .project-github{

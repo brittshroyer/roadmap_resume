@@ -1,3 +1,14 @@
+.smallScreenOverlay{
+  visibility: hidden;
+  position: absolute;
+  top: -1vh;
+  left: -1vw;
+  z-index: 10;
+  height: 102vh;
+  width: 102vw;
+  background: pink;
+}
+
 body {
   perspective: 600px;
   background: #7ec0ee;

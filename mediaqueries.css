@@ -1,3 +1,13 @@
+/*@media only screen and (max-device-width: 950px){
+  .smallScreenOverlay{
+    visibility: visible;
+  }
+}*/
+
+
+
+
+
 @media only screen and (max-device-width:480px){
   .states{
     top: -90%;

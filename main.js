@@ -54,7 +54,6 @@ $('#restart').on('click', function(){
 
 //on page load, scroll to bottom of the road
   $('.states').scrollTop($('.states')[0].scrollHeight);
-  console.log($('.states')[0].scrollHeight);
 
 //store total height of road div to later calculate distance traveled
   var initialDistance = $('.states').scrollTop();
@@ -62,7 +61,6 @@ $('#restart').on('click', function(){
 //drive using key press up and down arrows
   $(document).keydown(function(e){
     if(e.which == 38){
-      console.log('keypress working!');
       $(".states").animate({
               scrollTop:  '-=50',
               behavior: 'smooth'
@@ -78,7 +76,6 @@ $('#restart').on('click', function(){
   var drive = function(){
     var distanceRemaining = $('.states').scrollTop();
     var distanceTraveled = initialDistance - distanceRemaining;
-    console.log('distance traveled:',distanceTraveled);
     // translate ohio sign
     $('.ohioWelcome').css('transform', 'translateZ('+distanceTraveled/6+'px)');
     $('.post').css('height', 20+distanceTraveled/16+'px');

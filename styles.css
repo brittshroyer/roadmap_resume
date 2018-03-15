@@ -699,7 +699,6 @@ a{
   background: #2f1804;
 }
 .project-modal{
-  height: 600px;
   width: 900px;
   border: 50px solid tomato;
   background: #444;
@@ -713,6 +712,7 @@ a{
   overflow-y: scroll;
 }
 .project-child{
+  margin-bottom: 8px;
   height: 200px;
   width: 650px;
   background: black;
@@ -737,12 +737,16 @@ a{
   background-size: 101% 153%;
 }
 .project2-pic{
-  background: url('./images/Relief-RN.png');
+  background: url('./images/money.png');
   background-size: 100% 105%;
 }
 .project3-pic{
   background: url('./images/ember-hangman.png');
   background-size: 100% 105%;
+}
+.project4-pic{
+  background: url('./images/Eth-extension.png');
+  background-size: 100%;
 }
 .project-github{
   height: 50px;

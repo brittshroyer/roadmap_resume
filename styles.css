@@ -818,3 +818,15 @@ a{
   font-size: 28px;
   cursor: pointer;
 }
+
+.max-width-overlay {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  z-index: 100;
+  background: black;
+  color: white;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}

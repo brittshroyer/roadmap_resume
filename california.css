@@ -175,16 +175,14 @@
   height: 143px;
   left: 40%;
   top: -6px;
-  background: #d15b0c;
+  background: dodgerblue;
   border-radius: 4px;
-  box-shadow: 2px 3px 2px grey;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .banner h4{
-color: dodgerblue;
-text-shadow: 1px 1px 1px black;
+color: darkgrey;
 font-size: 34px;
 font-family: 'Racing Sans One', cursive;
 }

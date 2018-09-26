@@ -509,7 +509,7 @@ left: 51%;
   position: absolute;
   top: -100%;
   left: 50%;
-  border: 6px solid yellow;
+  /* border: 6px solid yellow; */
 }
 
 .state {

@@ -202,7 +202,7 @@ $('#restart').on('click', function(){
       $('.caveHole').css('transform','translateZ(' + caveDistance/6 + 'px)');
       $('.caliWelcome').css('transform','translateZ(' + caveDistance/6 + 'px)');
     }
-    if(distanceTraveled > 20250){
+    if (distanceTraveled > 20250) {
       var planeDistance = distanceTraveled - 20250;
       $('.sky').css('opacity', 1);
       $('.desertSky').css('opacity', 0);
@@ -210,14 +210,14 @@ $('#restart').on('click', function(){
       $('.plane').addClass('fly');
       $('.hill').css('background', '#78AB46');
       $('.hill').css('border', 2 + 'px solid green');
-      $('.hill2').css('border', 'none');
+      $('.hill2').css('visibility', 'hidden');
       $('.ground').css('background', '#78AB46');
       var propeller = setInterval(function(){
         $('.prop').toggleClass('soar');
       }, 10);
       setTimeout(function(){
         clearInterval(propeller);
-      }, 11000);    // setTimeout(soaring, 12000);
+      }, 11000);
     }else{
       $('.plane').removeClass('fly');
     }
@@ -269,7 +269,7 @@ $('#restart').on('click', function(){
       $('.header').fadeIn('slow');
     },2500);
     //prevent scrolling
-    $('.states').css('overflow', 'hidden');
+    // $('.states').css('overflow', 'hidden');
   }else{
     $('.bootstrap').removeClass('rise1');
     $('.chrome').removeClass('rise2');
